@@ -2,6 +2,7 @@
 
 Computational Archaeology  
 George W. Aravidis | July 2026  
+Ulm - Söflingen
 Email address :: csec.unbutton326@passinbox.com  
 
 "Cryptography is the ultimate form of non-violent warfare. Also, it’s a great excuse to run your CPU at 100% capacity."  
@@ -74,7 +75,8 @@ python3 Enigma-Cryptanalytic-Attack.py
 
 ## Academic & Legal Disclaimer  
 
-(c) by George W. Aravidis | Email Contact: csec.unbutton326@passinbox.com  
+Written by George W. Aravidis  
+Email Contact: csec.unbutton326@passinbox.com  
 
 This repository is explicitly designated for academic research, historical reconstruction, and satisfying an intense nerd curiosity.  
 Do not use this to encrypt modern sensitive communications; a standard smartphone can crack this cipher faster than you can brew a cup of Earl Grey tea.  
