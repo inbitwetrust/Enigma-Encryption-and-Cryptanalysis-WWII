@@ -1,7 +1,7 @@
 # Project ULTRA: Modern Cryptanalytic Reconstruction of the Enigma Cipher
-## Computational Archaeology  
-## George W. Aravidis | July 2026
-## Email address :: csec.unbutton326@passinbox.com
+### Computational Archaeology  
+### George W. Aravidis | July 2026
+### Email address :: csec.unbutton326@passinbox.com
 
 "Cryptography is the ultimate form of non-violent warfare. Also, it’s a great excuse to run your CPU at 100% capacity."  
 
