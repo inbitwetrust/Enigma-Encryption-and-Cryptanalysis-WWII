@@ -22,13 +22,13 @@ We broke the unbreakable. O(1) mercy for the Axis.
 ## Architecture & Features  
 This repository is bifurcated into two primary modules:  
 
-### The Emulator: EnigmaCipher.py
+### The Emulator: Enigma-Cypher.py
 A highly accurate cryptographic simulator built for defense-in-depth terminal operations.  
 1. Kriegsmarine-Grade Mechanics: Full simulation of the 5-rotor (Walzenordnung) configuration, complete with Ringstellung (ring settings) and Grundstellung (starting positions).
 2. Dynamic Steckerbrett (Plugboard): Implements pairing logic with options for randomized autonomous wiring or strict manual overrides.
 3. Interactive CLI: Features retro telemetry and terminal chatter—including historical quips from Alan Turing himself.
 
-### The Cryptanalytic Engine: EnigmaCryptanalysisAttack.py  
+### The Cryptanalytic Engine: Enigma-BOMBE-Cryptanalysis-Attack.py  
 A weaponized decryption framework that treats Enigma's polyalphabetic substitution as a mere minor inconvenience.  
 1. Distributed Bombe Matrix: Leverages concurrent.futures.ProcessPoolExecutor to spawn worker threads for aggressive, multi-core crib-dragging operations.  
 2. Autonomous Dictionary AI: Deploys a fuzzy logic scoring heuristic against a meticulously curated Wehrmacht dictionary to automatically deduce and patch missing plugboard wires.  
@@ -68,7 +68,7 @@ python3 Enigma-Cypher.py
 ```
 To initialize the Cryptanalytic Engine (Hut 6):
 ```bash
-python3 Enigma-Cryptanalytic-Attack.py
+python3 Enigma-BOMBE-Cryptanalysis-Attack.py
 ```
 
 (Note: The cracking engine requires a valid "crib" (known plaintext snippet) to initiate the Bombe matrix. Feed it accurate data, or it will throw a contradiction exception!)  
