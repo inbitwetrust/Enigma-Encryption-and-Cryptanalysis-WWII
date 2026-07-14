@@ -1,7 +1,8 @@
-# Project ULTRA: Modern Cryptanalytic Reconstruction of the Enigma Cipher
-### Computational Archaeology  
-### George W. Aravidis | July 2026
-### Email address :: csec.unbutton326@passinbox.com
+# Project ULTRA: Modern Cryptanalytic Reconstruction of the Enigma Cipher  
+
+Computational Archaeology  
+George W. Aravidis | July 2026  
+Email address :: csec.unbutton326@passinbox.com  
 
 "Cryptography is the ultimate form of non-violent warfare. Also, it’s a great excuse to run your CPU at 100% capacity."  
 
@@ -35,9 +36,10 @@ A weaponized decryption framework that treats Enigma's polyalphabetic substituti
 ### Deployment Protocol (Installation)  
 To ensure this computational beast does not pollute your global Python namespace—a cardinal sin in computer science — we will contain it within a virtualized matrix.  
 
-```
-Step 1: Initialize the Virtual Environment  
+### Step 1: Initialize the Virtual Environment  
 Open your terminal and establish a secure, isolated environment:
+
+```bash
 # Instantiate the virtual environment (named 'myenv')
 python3 -m venv myenv
 
@@ -47,5 +49,46 @@ source myenv/bin/activate
 # (If operating on a Windows subsystem, execute: myenv\Scripts\activate)
 ```
 
+### Step 2: Install Dependencies  
+While the emulator relies entirely on the standard library, our cryptanalytic graphing engine requires external dependencies to render the intelligence dossiers.  
 
+```bash
+# Upgrade the package installer (mandatory hygiene)
+pip install --upgrade pip
 
+# Install the matplotlib library for telemetry rendering
+pip install matplotlib
+```
+### Step 3: Execute the Binaries  
+The environment is primed. You may now simulate cryptographic traffic or shatter it.  
+To initialize the Enigma Simulator:  
+```bash
+python3 Enigma-Cypher.py
+```
+To initialize the Cryptanalytic Engine (Hut 6):
+```bash
+python3 Enigma-Cryptanalytic-Attack.py
+```
+
+(Note: The cracking engine requires a valid "crib" (known plaintext snippet) to initiate the Bombe matrix. Feed it accurate data, or it will throw a contradiction exception!)  
+
+## Academic & Legal Disclaimer  
+
+(c) by George W. Aravidis | Email Contact: csec.unbutton326@passinbox.com  
+
+This repository is explicitly designated for academic research, historical reconstruction, and satisfying an intense nerd curiosity.  
+Do not use this to encrypt modern sensitive communications; a standard smartphone can crack this cipher faster than you can brew a cup of Earl Grey tea.  
+
+## Legal & Ethical Disclaimer  
+
+### Educational and Historical Research Only  
+This software is provided "as is" and is intended exclusively for academic, educational, and historical research purposes. The project serves to reconstruct and document the cryptographic methods used during the Second World War.  
+
+### Compliance with Local Regulations  
+Users are advised that the use, distribution, or even the possession of cryptographic tools—regardless of their historical nature—may be subject to specific national or local regulations in certain jurisdictions. It is the sole responsibility of the user to ensure that their engagement with this software complies with all applicable laws and export control regulations in their respective country.
+
+### No Liability for Misuse  
+The author assumes no liability for any unauthorized, unlawful, or unintended use of this software. By accessing, downloading, or executing this code, the user acknowledges that they do so at their own risk and agrees to hold the author harmless from any legal consequences arising from the modification, redistribution, or application of this software in non-compliant environments.  
+
+### Security Awareness  
+This implementation utilizes historical algorithms that have been computationally superseded. Do not use this framework to encrypt modern sensitive data, as these ciphers provide no security against contemporary cryptographic attacks.  
