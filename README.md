@@ -35,7 +35,17 @@ A weaponized decryption framework that treats Enigma's polyalphabetic substituti
 ### Deployment Protocol (Installation)  
 To ensure this computational beast does not pollute your global Python namespace—a cardinal sin in computer science — we will contain it within a virtualized matrix.  
 
+```
+Step 1: Initialize the Virtual Environment  
+Open your terminal and establish a secure, isolated environment:
+# Instantiate the virtual environment (named 'myenv')
+python3 -m venv myenv
 
+# Engage the environment (Linux/macOS)
+source myenv/bin/activate
+
+# (If operating on a Windows subsystem, execute: myenv\Scripts\activate)
+```
 
 
 
