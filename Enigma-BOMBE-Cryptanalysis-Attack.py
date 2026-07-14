@@ -278,7 +278,6 @@ def generate_pdf_report(score_history, final_text, ciphertext, rotors, rings, po
     style.use('dark_background')
     pdf_filename = "Hut6_ULTRA_Report_v8_5.pdf"
     
-    # Το global footer string που θέλουμε σε κάθε σελίδα
     footer_text = "(c) by George W. Aravidis | Email : csec.unbutton326@passinbox.com | Historical Reference"
     
     with PdfPages(pdf_filename) as pdf:
@@ -354,10 +353,7 @@ def generate_pdf_report(score_history, final_text, ciphertext, rotors, rings, po
         )
 
         fig1.text(0.06, 0.90, content_p1, fontsize=10, color='#00FF00', family='monospace', va='top')
-        
-        # --- FOOTER INJECTION: PAGE 1 ---
         fig1.text(0.95, 0.02, footer_text, ha='right', fontsize=9, color='#008800', family='monospace')
-        
         pdf.savefig(fig1, facecolor=fig1.get_facecolor(), edgecolor='none', dpi=300)
         plt.close(fig1)
 
@@ -393,9 +389,7 @@ def generate_pdf_report(score_history, final_text, ciphertext, rotors, rings, po
         ax2.legend(facecolor='#0a0a0a', edgecolor='#00FF00', labelcolor='linecolor')
         ax2.set_facecolor('#0a0a0a')
 
-        # --- FOOTER INJECTION: PAGE 2 ---
         fig2.text(0.95, 0.02, footer_text, ha='right', fontsize=9, color='#008800', family='monospace')
-
         pdf.savefig(fig2, facecolor=fig2.get_facecolor(), edgecolor='none', dpi=300)
         plt.close(fig2)
 
@@ -468,14 +462,12 @@ def generate_pdf_report(score_history, final_text, ciphertext, rotors, rings, po
         )
 
         fig3.text(0.06, 0.88, content_p3, fontsize=11, color='#00FF00', family='monospace', va='top')
-        
-        # --- FOOTER INJECTION: PAGE 3 ---
         fig3.text(0.95, 0.02, footer_text, ha='right', fontsize=9, color='#008800', family='monospace')
-        
         pdf.savefig(fig3, facecolor=fig3.get_facecolor(), edgecolor='none', dpi=300)
         plt.close(fig3)
 
     print(f"[+] SUCCESS: Dense Multi-page Report generated and saved locally as '{pdf_filename}'")
+    
 # + --------------------------------------------------------- +
 # | TERMINAL I/O                                              |
 # + --------------------------------------------------------- +
@@ -571,11 +563,11 @@ def run_ultimate_cracker():
  |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
  |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
  |                                                           |
- |        [ THE ULTIMATE BLETCHLEY PARK ENGINE v8.5 ]        |
- |        [ MULTIPROCESSING & FUZZY LOGIC ENABLED   ]        |
+ |  [ THE ULTIMATE BLETCHLEY PARK ENGINE v8.5 ]              |
+ |  [ MULTIPROCESSING & FUZZY LOGIC ENABLED   ]              |
  |                                                           |
- |        (c) George W. Aravidis                             |
- |        Email address # csec.unbutton326@passinbox.com     |
+ |  (c) George W. Aravidis                                   |
+ |  Email address # csec.unbutton326@passinbox.com           |
  + --------------------------------------------------------- +
     """)
     print("[!] ERROR HANDLING: MAXIMUM. NO TOLERANCE FOR MISTAKES.\n")
