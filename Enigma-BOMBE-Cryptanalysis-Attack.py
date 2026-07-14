@@ -2,10 +2,13 @@ import sys
 import time
 import textwrap
 import concurrent.futures
+
 from collections import Counter
+
 import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.style as style
+
 from matplotlib.backends.backend_pdf import PdfPages
 
 # + --------------------------------------------------------- +
