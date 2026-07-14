@@ -1,6 +1,13 @@
-# Project ULTRA: Modern Cryptanalytic Reconstruction of the Enigma Cipher  
+# Project ULTRA: Echoes of Bletchley Park – A Digital Resurrection of the WWII Enigma Cipher 
+### Computational Archaeology
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python Version](https://img.shields.io/badge/Python-3.10%2B-blueviolet)
+![Security Level](https://img.shields.io/badge/Security_Level-1940s_Hardware-red.svg)
+![Enigma](https://img.shields.io/badge/Status-Cracked_by_Turing-success.svg)
 
-Computational Archaeology  
+> *"We can only see a short distance ahead, but we can see plenty there that needs to be done."*  
+> — **Alan Turing**, The grandfather of computer science
+
 George W. Aravidis | July 2026  
 Ulm - Söflingen  
 Email address :: csec.unbutton326@passinbox.com  
@@ -113,12 +120,17 @@ Non-Exhaustive Regulatory Examples:
 
 It is the absolute, sole, and non-delegable responsibility of the end-user to conduct comprehensive due diligence prior to engagement. By cloning, forking, downloading, executing, or in any way interacting with this repository, you explicitly and unconditionally assume all legal, technical, and operational risks.
 
-1. Waiver of Litigation & Indemnification: You hereby agree to an unconditional waiver of liability, irrevocably forfeiting any right to litigate, initiate legal proceedings, or bring any claims whatsoever against the author(s) or contributors under any global jurisdiction. Furthermore, you expressly agree to fully indemnify, defend, and hold harmless the author(s) from any liabilities, claims, fines, or legal fees arising directly or indirectly from your use, misuse, or distribution of this codebase.
+**1. Waiver of Litigation & Indemnification:**  
+You hereby agree to an unconditional waiver of liability, irrevocably forfeiting any right to litigate, initiate legal proceedings, or bring any claims whatsoever against the author(s) or contributors under any global jurisdiction. Furthermore, you expressly agree to fully indemnify, defend, and hold harmless the author(s) from any liabilities, claims, fines, or legal fees arising directly or indirectly from your use, misuse, or distribution of this codebase.
 
-2. Ignorance of export controls, regional cryptography restrictions, or total cryptographic bans does not constitute a valid legal defense. If you do not explicitly agree to these terms, you are legally and strictly prohibited from accessing or interacting with this software.   
+**2. No Defense of Ignorance & Strict Prohibition:**  
+Ignorance of export controls, regional cryptography restrictions, or total cryptographic bans does not constitute a valid legal defense. **If you do not explicitly agree to these terms, you are legally and strictly prohibited from accessing or interacting with this software.**  
 
 ### Security Awareness: Do Not Use for Real Encryption  
+This implementation reconstructs historical cryptographic primitives that have been mathematically and computationally decimated. While breaking this cipher in the 1940s required a warehouse full of electromechanical *Bombe* machines and the combined genius of Bletchley Park, a modern smartwatch could brute-force the entire keyspace before your coffee gets cold.  
 
-This implementation utilizes historical algorithms that have been mathematically and computationally decimated. While breaking it required a room full of Bombe machines in the 1940s, a modern smartwatch could brute-force this cipher before your coffee gets cold. DO NOT use this framework to encrypt modern sensitive data, passwords, or personal communications. These ciphers provide absolutely zero security against contemporary cryptographic attacks.  
+**DO NOT, UNDER ANY CIRCUMSTANCES,** utilize this framework to encrypt contemporary sensitive data, passwords, Personally Identifiable Information (PII), or any form of personal or production communications. By modern standards, these ciphers provide **absolutely zero cryptographic security** against contemporary attacks.  
+
+Deploying this historical code for real-world data protection constitutes catastrophic technical negligence. The author explicitly disclaims any and all liability for data breaches, leaks, or data loss resulting from the misuse of this educational framework in a production environment.  
 
 
