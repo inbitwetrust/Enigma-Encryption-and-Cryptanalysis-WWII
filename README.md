@@ -83,14 +83,42 @@ Do not use this to encrypt modern sensitive communications; a standard smartphon
 
 ## Legal & Ethical Disclaimer  
 
+### A Tribute to Bletchley Park: The Dawn of Modern Computing  
+
+This project is, above all, a profound historical homage to the World War II Enigma machine and the unparalleled genius of the cryptanalysts at Bletchley Park. We stand on the shoulders of giants—Alan Turing, Gordon Welchman, Joan Clarke, Hugh Alexander, and the thousands of brilliant minds in Hut 8 and beyond. Their monumental intellectual triumph in breaking the Enigma cipher did not merely shorten the deadliest conflict in human history; it laid the very foundational stones of theoretical computer science and artificial intelligence. This codebase is a humble digital monument to their legacy—dedicated to the minds that cracked the uncrackable.  
+
 ### Educational and Historical Research Only  
-This software is provided "as is" and is intended exclusively for academic, educational, and historical research purposes. The project serves to reconstruct and document the cryptographic methods used during the Second World War.  
 
-### Compliance with Local Regulations  
-Users are advised that the use, distribution, or even the possession of cryptographic tools—regardless of their historical nature—may be subject to specific national or local regulations in certain jurisdictions. It is the sole responsibility of the user to ensure that their engagement with this software complies with all applicable laws and export control regulations in their respective country.
+This software is provided strictly "as is" and is intended exclusively for academic, educational, and historical research purposes. The project serves solely to reconstruct, visualize, and document the cryptomechanical methods utilized during the Second World War. It is a tool for learning, not a tool for operational secrecy.  
 
-### No Liability for Misuse  
-The author assumes no liability for any unauthorized, unlawful, or unintended use of this software. By accessing, downloading, or executing this code, the user acknowledges that they do so at their own risk and agrees to hold the author harmless from any legal consequences arising from the modification, redistribution, or application of this software in non-compliant environments.  
+### Absolute Limitation of Liability  
 
-### Security Awareness  
-This implementation utilizes historical algorithms that have been computationally superseded. Do not use this framework to encrypt modern sensitive data, as these ciphers provide no security against contemporary cryptographic attacks.  
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  
+
+By accessing, downloading, reproducing, or executing this repository's contents, the user explicitly acknowledges that they do so at their own absolute risk. The author assumes zero liability for any unauthorized, unlawful, or unintended use. You agree to fully indemnify and hold the author harmless from any legal consequences, damages, or claims arising from the modification, redistribution, or application of this software in non-compliant environments.  
+
+### Stringent Compliance with Global Export Controls & Cryptography Laws  
+
+The global legislative framework governing cryptography forms a highly complex, strictly enforced legal matrix. Users are expressly notified that the downloading, use, distribution, modification, or mere possession of cryptographic software—irrespective of its historical context, lack of modern security, or computationally obsolete nature—is heavily regulated and may constitute a severe legal violation in certain jurisdictions.  
+
+Non-Exhaustive Regulatory Examples:  
+
+1. Absolute Cryptography Bans: In specific nations, the unauthorized use, development, or possession of any cryptographic algorithm—regardless of its strength or historical origin—is strictly prohibited by law. Using this software in such regions may result in immediate criminal prosecution.  
+
+2. International Treaties (The Wassenaar Arrangement): Even historical cryptographic implementations may fall under definitions of "Dual-Use Goods," potentially restricting their cross-border transfer.  
+
+3. United States Export Controls (EAR & ITAR): Historically, cryptographic software was classified as a defense article (munition) under the International Traffic in Arms Regulations (ITAR). Today, although this repository contains open-source and computationally obsolete code, its global distribution is governed by the Export Administration Regulations (EAR) administered by the US Bureau of Industry and Security (BIS). Because platforms like GitHub are subject to US jurisdiction, the sharing and exporting of this code are tightly bound by these federal frameworks.  
+
+4. European Union (Dual-Use Regulations): EU frameworks governing the export, transit, and brokering of dual-use technologies apply strict controls on cryptographic software leaving or moving within the EU zone.  
+
+It is the absolute, sole, and non-delegable responsibility of the end-user to conduct comprehensive due diligence prior to engagement. By cloning, forking, downloading, executing, or in any way interacting with this repository, you explicitly and unconditionally assume all legal, technical, and operational risks.
+
+1. Waiver of Litigation & Indemnification: You hereby agree to an unconditional waiver of liability, irrevocably forfeiting any right to litigate, initiate legal proceedings, or bring any claims whatsoever against the author(s) or contributors under any global jurisdiction. Furthermore, you expressly agree to fully indemnify, defend, and hold harmless the author(s) from any liabilities, claims, fines, or legal fees arising directly or indirectly from your use, misuse, or distribution of this codebase.
+
+2. Ignorance of export controls, regional cryptography restrictions, or total cryptographic bans does not constitute a valid legal defense. If you do not explicitly agree to these terms, you are legally and strictly prohibited from accessing or interacting with this software.   
+
+### Security Awareness: Do Not Use for Real Encryption  
+
+This implementation utilizes historical algorithms that have been mathematically and computationally decimated. While breaking it required a room full of Bombe machines in the 1940s, a modern smartwatch could brute-force this cipher before your coffee gets cold. DO NOT use this framework to encrypt modern sensitive data, passwords, or personal communications. These ciphers provide absolutely zero security against contemporary cryptographic attacks.  
+
+
