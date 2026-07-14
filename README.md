@@ -68,7 +68,7 @@ python3 Enigma-Cypher.py
 ```
 To initialize the Cryptanalytic Engine (Hut 6):
 ```bash
-python3 Enigma-BOMBE-Cryptanalysis-Attack.py
+python3 Enigma-BOMBE-Cryptanalysis-Attack.py  
 ```
 
 (Note: The cracking engine requires a valid "crib" (known plaintext snippet) to initiate the Bombe matrix. Feed it accurate data, or it will throw a contradiction exception!)  
