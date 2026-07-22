@@ -38,8 +38,7 @@ A highly accurate cryptographic simulator built for defense-in-depth terminal op
 ### The Cryptanalytic Engine: Enigma-BOMBE-Cryptanalysis-Attack.py  
 A weaponized decryption framework that treats Enigma's polyalphabetic substitution not as a formidable cryptographic barrier, but rather as a pedestrian runtime inconvenience.  
 
-1. Distributed Bombe Matrix:  
-Leverages concurrent.futures.ProcessPoolExecutor to spawn an aggressive phalanx of worker threads. This unleashes a multi-core crib-dragging offensive so thoroughly parallelized, it would presumably have dimmed the local power grid if executed in 1944.  
+1. Distributed Bombe Matrix: Leverages concurrent.futures.ProcessPoolExecutor to spawn an aggressive phalanx of worker threads. This unleashes a multi-core crib-dragging offensive so thoroughly parallelized, it would presumably have dimmed the local power grid if executed in 1944.  
 
 2. Thermodynamic AI (Simulated Annealing): Eschewing rudimentary heuristics, the engine deploys a stochastic Simulated Annealing algorithm against a meticulously curated Wehrmacht linguistic database. It thermodynamically "cools" into the optimal plugboard (Steckerbrett) configuration, gracefully coercing order out of cryptographic entropy.  
 
