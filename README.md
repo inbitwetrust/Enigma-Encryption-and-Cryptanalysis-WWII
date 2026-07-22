@@ -84,7 +84,17 @@ To initialize the Cryptanalytic Engine (Hut 6):
 ```bash
 python3 Enigma-BOMBE-Cryptanalysis-Attack.py  
 ```
+**cpp code - Compile for Linux (Native):**
+Compile with full optimizations and thread support.
+```bash
+g++ -O3 -pthread -std=c++17 Enigma-Machine.cpp -o Enigma-Machine
+```
 
+**cpp code - Compile for Windows (Cross-compiling from Linux using MinGW-w64):**
+If you are on Linux but want to build a Windows executable.
+```bash
+x86_64-w64-mingw32-g++ -O3 -pthread -std=c++17 Enigma-Machine.cpp -o Enigma-Machine.exe -static
+```
 (Note: The cracking engine requires a valid "crib" (known plaintext snippet) to initiate the Bombe matrix. Feed it accurate data, or it will throw a contradiction exception!)  
 
 ## Academic & Legal Disclaimer  
