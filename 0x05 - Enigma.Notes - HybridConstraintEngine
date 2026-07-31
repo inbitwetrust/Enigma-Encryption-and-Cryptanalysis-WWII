@@ -1,0 +1,817 @@
+==-----------------------------------------------------------------------==
+==                                                                       ==
+==    ███████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗                   ==
+==    ██╔════╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗                  ==
+==    █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║                  ==
+==    ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║                  ==
+==    ███████╗██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║                  ==
+==    ╚══════╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝                  ==
+==                                                                       ==
+==-----------------------------------------------------------------------==
+==  Title   : Darwin Meets Bombe / The Hybrid Constraint Engine          ==
+==  Author  : 0xGeorge_W_Aravidis                                        ==
+==  Date    : July 2026                                                  ==
+==  Volume  : 0x05                                                       ==
+==-----------------------------------------------------------------------==
+
+[SYSTEM INITIATION]...
+[LOADING THREE-ROTOR ENIGMA MODEL]... DONE.
+[ENUMERATING 60 WALZENLAGEN]... DONE.
+[SPAWNING NATIVE CPU WORKERS]... DONE.
+[ARMING CRIB CONSTRAINT PROPAGATOR]... DONE.
+[WARNING: 27,418,560 CORE STATES AHEAD]...
+
+===========================================================================
+INTRODUCTION : THE ATTACK HAS CHANGED
+===========================================================================
+
+The previous generation of this project treated the Steckerbrett as the main
+battlefield. A partial key was refined by an evolutionary search, judged by
+German-language structure, and converted into readable text by a segmentation
+stage.
+
+Version 16 changes the order of operations.
+
+The program no longer asks the Genetic Algorithm to wander through the entire
+cryptographic wilderness. It first constructs a narrow corridor through that
+wilderness by combining a crib, the Enigma no-self-encryption property, rotor
+simulation, symmetric plugboard constraints, contradiction propagation, and a
+native multithreaded search across the machine's core settings.
+
+Only after the Bombe-inspired stage has reduced the space does the linguistic
+engine rank Ringstellung candidates. Only after that does the mutation-based
+evolutionary stage refine the remaining unknown plugboard connections. The
+final candidate is then exposed to a human review loop, segmented by a
+Viterbi-style dynamic program, and exported as a simulated historical dossier.
+
+The v16 pipeline is therefore not one algorithm. It is a relay race:
+
+  Crib Hypothesis
+        |
+        v
+  No-Self-Encryption Filter
+        |
+        v
+  Parallel Bombe-Inspired Constraint Search
+        |
+        v
+  Ringstellung Language Ranking
+        |
+        v
+  Mutation-Based Plugboard Evolution
+        |
+        v
+  Human Override
+        |
+        v
+  Viterbi-Style Word Segmentation
+        |
+        v
+  Historical-Style PDF Telemetry
+
+This paper documents that exact implementation. Where the code uses a
+heuristic rather than a formal probabilistic model, the heuristic is described
+as a heuristic. Where the code is inspired by the historical Bombe rather than
+a cycle-accurate reconstruction of it, the distinction is explicit.
+
+The objective is fidelity, not mythology.
+
+===========================================================================
+CHAPTER I : THE MACHINE MODEL AND THE ATTACK BOUNDARY
+===========================================================================
+
+### 1.1 Supported Enigma Configuration
+
+The cryptographic core models a three-rotor Enigma using:
+
+* Rotors I, II, III, IV, and V.
+* Any ordered selection of three distinct rotors.
+* Reflector B.
+* A 26-letter alphabet, A through Z.
+* A symmetric plugboard mapping applied before and after the rotor core.
+* Ring settings and starting positions represented as three letters.
+* Rotor stepping before each encrypted or decrypted character.
+
+The rotor-order count is the permutation:
+
+  P(5,3) = 5 x 4 x 3 = 60
+
+The program automatically generates all sixty Walzenlagen. No manual rotor
+order is required from the operator.
+
+### 1.2 Electrical Transformation
+
+Let S be the Steckerbrett permutation and let E_k be the internal Enigma core
+permutation at character position k, after stepping. For plaintext letter p_k,
+the ciphertext letter c_k is:
+
+  c_k = S( E_k( S(p_k) ) )
+
+Because the plugboard is an involution, S(S(x)) = x. Applying S to both sides
+gives the central constraint used by the Bombe-inspired stage:
+
+  S(c_k) = E_k( S(p_k) )
+
+This equation is the bridge between a guessed plaintext fragment and the
+unknown plugboard.
+
+### 1.3 Rotor Stepping
+
+The FastEnigmaCore performs the familiar three-rotor stepping pattern:
+
+* The right rotor always advances.
+* If the right rotor is at its notch, the middle rotor advances.
+* If the middle rotor is at its notch, both middle and left rotors advance.
+
+The stepping occurs before each character traverses the machine. This detail is
+not decorative. An off-by-one stepping error transforms every derived
+permutation into poison.
+
+### 1.4 What This Build Does Not Search
+
+The implementation is deliberately bounded. It does not model every historical
+Enigma variant, every reflector, four-rotor naval configurations, multiple
+notches beyond those defined for the selected rotors, or a historically exact
+Bombe electromechanical architecture.
+
+It is an academic three-rotor cryptanalysis demonstrator with a hybrid search
+pipeline.
+
+===========================================================================
+CHAPTER II : CRIB ACQUISITION AND THE NO-SELF-ENCRYPTION FILTER
+===========================================================================
+
+### 2.1 The Crib as a Constraint Injection
+
+A crib is a hypothesized plaintext fragment. It does not prove what the message
+contains. It injects structure into the search.
+
+Version 16 begins by testing a curated list of thirty-two historically
+motivated phrases at Offset 0. These include command headers, weather phrases,
+classification markers, routing language, and common military formulae.
+
+Each candidate is treated as a hypothesis. The program attempts them in a fixed
+priority order and stops at the first phrase that produces surviving core
+configurations.
+
+If every predefined Offset-0 hypothesis fails, the operator supplies a manual
+crib.
+
+### 2.2 Enigma's No-Self-Encryption Property
+
+A correctly configured Enigma never maps a letter to itself. Therefore, for a
+crib aligned at offset o:
+
+  crib[k] != ciphertext[o + k]
+
+must hold for every k in the crib.
+
+The alignment scanner drags the manual crib across the ciphertext and rejects
+any offset containing even one self-letter clash. This is a cheap filter, but
+cheap filters are precious when they remove entire branches before the
+27-million-state engine wakes up.
+
+### 2.3 Fixed-Offset and Sliding-Offset Modes
+
+The code implements two operational paths:
+
+  [A] Curated crib mode
+      The crib is tested only at Offset 0.
+
+  [B] Manual crib mode
+      Every offset satisfying the no-self-encryption rule is retained.
+
+The second path is broader, but each additional admissible offset multiplies
+the number of constraint checks performed for every core state.
+
+===========================================================================
+CHAPTER III : THE 27,418,560-STATE CORE SWEEP
+===========================================================================
+
+### 3.1 Decomposing the Search Space
+
+Phase 1 scans:
+
+  60 rotor orders
+  x 26 right-rotor ring settings
+  x 26^3 starting positions
+  ------------------------------------------------
+  = 60 x 26 x 17,576
+  = 27,418,560 core states
+
+During this phase, the left and middle ring letters are represented as A. The
+right ring is explicitly varied. The remaining left and middle Ringstellung
+search is deferred to Phase 1.5.
+
+### 3.2 Native Parallelism
+
+The state interval is divided among std::thread workers according to
+hardware_concurrency(). If the platform reports zero logical processors, the
+program falls back to four threads.
+
+Each worker owns thread-local rotor tables and a thread-local permutation slice.
+Shared output is protected by a mutex, while progress is reported through an
+atomic state counter.
+
+The architecture is intentionally CPU-native. It avoids creating a heavyweight
+Enigma object for every letter of every state.
+
+### 3.3 Precomputed Wiring Tables
+
+When a worker enters a new rotor order, it builds:
+
+* Forward rotor wiring arrays.
+* Inverse rotor wiring arrays.
+* Notch lookup tables.
+* Reflector B as integer indices.
+
+For each character position in the crib, the worker steps the rotor state and
+constructs a complete 26-letter permutation for the rotor-reflector-rotor path
+without the plugboard.
+
+The result is a sequence:
+
+  E_0, E_1, E_2, ..., E_(L-1)
+
+where L is the crib length and each E_k maps all twenty-six possible input
+letters through the internal machine at relative position k.
+
+This changes the inner loop from repeated string searching into indexed table
+lookups. The cryptanalytic furnace gets fewer moving parts and more heat.
+
+===========================================================================
+CHAPTER IV : BOMBE-INSPIRED CONSTRAINT PROPAGATION
+===========================================================================
+
+### 4.1 Seeding the Plugboard Hypothesis
+
+For each core state and crib offset, the program selects the most frequent
+letter in the crib as a starting node. Let that letter be p*.
+
+It then tries all twenty-six possible plugboard images:
+
+  S(p*) = g,  where g belongs to {A, ..., Z}
+
+The reverse assignment is installed immediately:
+
+  S(g) = p*
+
+This enforces the plugboard's symmetric, involutive structure.
+
+### 4.2 Propagation Rule
+
+At crib position k, let p be the crib letter and c the aligned ciphertext
+letter. The known internal permutation is E_k.
+
+If S(p) is known, then:
+
+  S(c) = E_k( S(p) )
+
+If S(c) is known, the same involutive Enigma relation can be propagated in the
+opposite direction:
+
+  S(p) = E_k( S(c) )
+
+The code repeatedly traverses every crib relation until no new assignment can
+be produced.
+
+This is a fixed-point computation. Information ricochets through the menu until
+it either stabilizes or hits a contradiction.
+
+### 4.3 Contradiction Detection
+
+A branch is rejected when a letter is forced to map to two different targets,
+or when the symmetric reverse mapping conflicts with an existing assignment.
+
+Formally, if the branch already contains:
+
+  S(x) = y
+
+and propagation demands:
+
+  S(x) = z,  with y != z
+
+then the branch is impossible under the current rotor state, ring hypothesis,
+starting position, crib, and offset.
+
+No language model is needed at this point. The branch dies electrically.
+
+### 4.4 Stop Heuristic
+
+A non-contradictory branch is not automatically accepted. The implementation
+requires at least twelve assigned plugboard letters. It then counts how many of
+the twenty-six initial guesses produce such a branch.
+
+The core state is retained only when the number of surviving guesses is between
+one and five inclusive.
+
+This is a selectivity heuristic:
+
+  assigned plugboard letters >= 12
+  and
+  1 <= surviving seed guesses <= 5
+
+The program stores the last surviving partial plugboard mapping for that core
+state.
+
+### 4.5 Historical Fidelity Statement
+
+This stage is Bombe-inspired. It uses crib menus, Enigma permutations,
+involutive plugboard constraints, bidirectional propagation, and contradiction
+elimination. It does not emulate the physical drums, relays, diagonal board,
+stop circuitry, timing, or complete operational procedure of a wartime Bombe.
+
+The inspiration is mathematical, not museum-grade mechanical reconstruction.
+
+===========================================================================
+CHAPTER V : PHASE 1.5 AND THE RINGSTELLUNG EQUIVALENCE
+===========================================================================
+
+### 5.1 Why a Second Ring Search Exists
+
+Phase 1 explicitly varies the right-rotor ring setting while the left and middle
+ring letters begin at A. Every surviving Bombe candidate therefore carries:
+
+* A rotor order.
+* A starting position.
+* A right-ring hypothesis.
+* A crib offset.
+* A partial plugboard mapping.
+
+Phase 1.5 expands each hit across all left and middle ring settings:
+
+  26 x 26 = 676 combinations per hit
+
+The right-ring letter remains the value discovered during Phase 1.
+
+### 5.2 Preserving the Effective Rotor Offset
+
+Rotor wiring depends on the difference between window position and ring
+setting. For a rotor position P and ring R, the effective offset is:
+
+  O = P - R  (mod 26)
+
+When the left or middle ring is changed, the program compensates the displayed
+starting position so that the effective wiring offset remains equivalent:
+
+  P' = P + R'  (mod 26)
+
+This produces representative keys from an equivalence class of left-rotor and
+middle-rotor position/ring pairs that share the same effective initial wiring
+offset in the implemented three-rotor model.
+
+### 5.3 Rewinding a Nonzero Crib Offset
+
+A Bombe hit aligned at a nonzero offset describes the machine state at the crib,
+not necessarily the state at the beginning of the intercepted message.
+
+For such a hit, Phase 1.5 searches all 17,576 possible initial positions,
+steps each candidate forward by the crib offset, and selects a position that
+reaches the target rotor state.
+
+This is a direct rewind-by-forward-simulation method. It is computationally
+expensive, but it preserves the program's stepping semantics without requiring
+an inverse stepping algorithm.
+
+### 5.4 Full-Message Ranking
+
+Each ring candidate decrypts the complete ciphertext using the partial
+plugboard recovered by Phase 1. The language fitness engine scores the result.
+
+The highest-scoring candidate across all Bombe hits becomes the core key passed
+to Phase 2.
+
+===========================================================================
+CHAPTER VI : THE LANGUAGE ORACLE IS A FEATURE ENGINE, NOT A LOG-LIKELIHOOD
+===========================================================================
+
+### 6.1 Dictionary Normalization
+
+The embedded Wehrmacht-oriented vocabulary contains thousands of military,
+meteorological, naval, aviation, geographic, administrative, cryptographic,
+and general German terms.
+
+Before use, every entry is normalized:
+
+* German umlauts become AE, OE, or UE.
+* Eszett becomes SS.
+* Lowercase ASCII becomes uppercase.
+* Every non-A-to-Z byte is discarded.
+* Duplicate normalized words are removed.
+
+In the current source, 3,362 literal entries collapse to 2,782 unique normalized
+A-to-Z tokens.
+
+The normalized vocabulary is stored both as a vector and as an unordered_set.
+The set enables constant-time average dictionary membership tests during word
+segmentation.
+
+### 6.2 Dictionary-Derived N-Gram Tables
+
+The MarkovChainEngine does not load statistical probabilities from a corpus.
+Instead, it records whether each possible bigram and quadgram appears at least
+once inside the normalized dictionary.
+
+The current build activates:
+
+  447 valid bigrams out of 26^2 = 676
+  6,081 valid quadgrams out of 26^4 = 456,976
+
+These are binary linguistic features:
+
+  valid_bigram[b]   belongs to {false, true}
+  valid_quadgram[q] belongs to {false, true}
+
+Therefore, the score is Markov-inspired in the broad N-gram sense, but it is
+not a trained Markov-chain log-likelihood.
+
+### 6.3 Index of Coincidence Gate
+
+For text T of length N with letter counts f_i, the Index of Coincidence is:
+
+                SUM_i f_i (f_i - 1)
+  IoC(T) = --------------------------------
+                     N (N - 1)
+
+The code rejects a candidate with a score of -5000 when:
+
+  IoC(T) > 0.095
+
+or:
+
+  IoC(T) < 0.035
+
+This gate eliminates extremely repetitive strings and highly noise-like
+strings before N-gram rewards can dominate the search.
+
+### 6.4 Exact Fitness Function
+
+For a candidate text T, define:
+
+* B as the set of dictionary-derived valid bigrams.
+* Q as the set of dictionary-derived valid quadgrams.
+* count_T(x) as the number of occurrences of N-gram x in T.
+
+For a candidate passing the IoC gate, the implemented score is:
+
+  Score(T) = 1000 x IoC(T)
+
+             + 2 x SUM over b in B of MIN(count_T(b), 6)
+
+             + 15 x SUM over q in Q of count_T(q)
+
+The cap of six applies independently to each valid bigram. Quadgram rewards are
+not capped.
+
+This design fights the old reward-hacking pattern in two ways:
+
+* IoC rejects implausible global repetition.
+* Per-bigram caps prevent a single frequent pair from printing unlimited money.
+
+The engine still remains heuristic. It measures compatibility with a curated
+vocabulary, not the probability of authentic German under a statistically
+trained corpus model.
+
+===========================================================================
+CHAPTER VII : MUTATION-BASED EVOLUTIONARY PLUGBOARD SEARCH
+===========================================================================
+
+### 7.1 The Reduced Mission
+
+The Bombe-inspired stage supplies a locked partial plugboard. Phase 2 does not
+replace those assignments. It evolves only letters not present in the locked
+mapping.
+
+The search parameters are fixed in the source:
+
+  Population size : 200
+  Generations     : 300
+  Mutation rate   : 0.25
+
+### 7.2 Chromosome Representation
+
+A chromosome is:
+
+  { plugboard map, fitness score }
+
+Its fitness is obtained by decrypting the entire ciphertext with the candidate
+plugboard and passing the result to the N-gram plus IoC scoring engine.
+
+### 7.3 Initialization
+
+The first chromosome is exactly the locked Bombe mapping.
+
+Each remaining chromosome begins with the same locked mapping and receives
+between one and four mutation operations. This creates a local cloud around the
+constraint-derived solution rather than a population scattered across the full
+Steckerbrett universe.
+
+### 7.4 Mutation Semantics
+
+A mutation selects two unlocked letters a and b. Existing pairings involving
+those selected letters are removed, and a new symmetric pair is installed:
+
+  S(a) = b
+  S(b) = a
+
+Former partners become implicitly unconnected unless they are paired again by a
+later mutation.
+
+The operator respects the locked mapping by excluding every locked letter from
+the mutation pool.
+
+### 7.5 Elitism and Parent Selection
+
+At every generation, the population is sorted by descending fitness.
+
+The next generation begins with:
+
+* The best solution ever observed.
+* Nineteen additional high-ranking chromosomes.
+
+The remaining population is produced by cloning a randomly selected chromosome
+from the best half of the current population. Each clone mutates with
+probability 0.25 and is then rescored.
+
+There is no crossover operator in v16.
+
+This matters. The phase is best described as a mutation-based evolutionary
+search with elitism, not as a classical crossover-heavy Genetic Algorithm.
+
+### 7.6 Exploration Versus Exploitation
+
+Elitism preserves discovered structure. Top-half parent selection exploits the
+best known region. Random mutation injects controlled disorder.
+
+The process is stochastic and has no proof of global optimality. Its advantage
+comes from entering the search after electrical constraints and Ringstellung
+ranking have already compressed the battlefield.
+
+Darwin is no longer sent into the entire jungle. Bombe hands him a map.
+
+===========================================================================
+CHAPTER VIII : THE HUMAN-IN-THE-LOOP OVERRIDE
+===========================================================================
+
+After the evolutionary stage, the program displays:
+
+* The current plugboard pairs.
+* The current plaintext candidate in five-letter groups.
+
+The operator may accept the result by pressing ENTER or typing PERFEKT. The
+operator may also enter a two-letter pair such as HJ.
+
+When a manual pair is entered, any existing connections involving those two
+letters are removed and the new symmetric pair is installed. The plaintext is
+then decrypted and displayed again.
+
+This phase acknowledges an uncomfortable truth: a heuristic scorer can prefer a
+linguistically dense wrong answer over a semantically correct answer. Human
+pattern recognition remains a valid final instrument, especially when the
+message is short, abbreviated, misspelled, or outside the embedded dictionary.
+
+The automated system proposes. The analyst disposes.
+
+===========================================================================
+CHAPTER IX : VITERBI-STYLE DYNAMIC PROGRAMMING FOR WORD SEGMENTATION
+===========================================================================
+
+### 9.1 The Problem
+
+Enigma traffic is processed as continuous letters. Even a correct decryption
+may appear as:
+
+  DASOBERKOMMANDODERWEHRMACHT
+
+The segmentation stage attempts to reconstruct:
+
+  DAS OBERKOMMANDO DER WEHRMACHT
+
+### 9.2 The Trellis
+
+Let D[i] be the best segmentation score for the prefix ending at character i.
+The implementation considers candidate words ending at i with a maximum length
+of twenty characters:
+
+  k belongs to [max(0, i - 20), i - 1]
+
+For candidate word w = text[k:i], the recurrence is:
+
+  D[i] = MAX_k ( D[k] + Emission(w) + Transition(previous, w) )
+
+Backpointers record the winning previous position. Traversing those
+backpointers from the end of the text reconstructs the selected word sequence.
+
+### 9.3 Emission Heuristic
+
+The emission score is:
+
+  Emission(w) = 12 x |w|^3,   if w is in the normalized dictionary
+
+  Emission(w) = -(|w| + 3),   otherwise
+
+Long recognized words therefore receive a strong reward. Unknown fragments are
+allowed, but penalized.
+
+### 9.4 Transition Heuristic
+
+The transition term uses word lengths rather than a learned word-to-word
+probability matrix:
+
+* Two consecutive one-letter segments receive -15.
+* Two consecutive segments longer than three letters receive +2.
+* All other transitions receive 0.
+
+This discourages fragmentation and gives a small preference to sequences of
+substantial words.
+
+### 9.5 Complexity and Terminology
+
+Because the look-back window is capped at twenty and dictionary lookup uses an
+unordered_set, the implemented runtime is approximately:
+
+  O(20N) = O(N)
+
+with O(N) memory for scores and backpointers.
+
+The routine is Viterbi-style because it computes a maximum-scoring path through
+a dynamic-programming trellis. It is not a fully trained Hidden Markov Model:
+there are no learned emission probabilities, no learned transition matrix, and
+no explicit hidden-state vocabulary graph.
+
+Accuracy begins with accurate names.
+
+===========================================================================
+CHAPTER X : THE SIMULATED ULTRA DOSSIER
+===========================================================================
+
+### 10.1 Report Generation Path
+
+After a final candidate is accepted, the C++ program writes a temporary Python
+script and executes it using:
+
+* myenv/bin/python3, when present.
+* python3, otherwise.
+
+Matplotlib is required. If NumPy, NetworkX, and Seaborn are also available, the
+report expands from a basic five-page document to an advanced ten-page dossier.
+
+### 10.2 Core Pages
+
+The baseline report includes:
+
+* Recovered machine configuration and plaintext.
+* Crib offset, IoC, and evolutionary score telemetry.
+* Evolutionary score history and letter-frequency comparison.
+* Historical educational material.
+* A plugboard wiring visualization.
+
+### 10.3 Advanced Pages
+
+When the optional scientific libraries are available, the report also adds:
+
+* A plaintext-ciphertext menu-style graph.
+* A bigram heatmap.
+* Shannon entropy visualizations.
+* A simulated traffic-analysis profile.
+* A synthetic tactical projection based on extracted keywords.
+
+### 10.4 Evidentiary Warning
+
+The PDF is explicitly a simulated historical-style dossier. Its decorative
+station metadata, operational framing, traffic profile, and tactical map are
+presentation artifacts. They are not archival evidence and should not be cited
+as historical records.
+
+The cryptanalytic values derived from the current run must be distinguished
+from the report's fictionalized atmosphere.
+
+===========================================================================
+CHAPTER XI : FAILURE MODES, LIMITATIONS, AND SCIENTIFIC HONESTY
+===========================================================================
+
+### 11.1 Crib Dependence
+
+The Phase-1 search depends on a correct or sufficiently useful crib. A wrong
+crib can produce zero hits, misleading hits, or an explosion of candidates.
+The predefined Offset-0 list accelerates a favorable case but does not prove
+that real traffic begins with any listed phrase.
+
+### 11.2 Heuristic Stop Selection
+
+The thresholds of twelve assigned letters and one-to-five valid seed guesses
+are engineering filters. They are not universal theorems of Enigma
+cryptanalysis. Different crib lengths and menu structures may require different
+selectivity.
+
+### 11.3 Partial Ring Search Architecture
+
+Phase 1 varies the right ring, while Phase 1.5 varies the left and middle rings.
+This decomposition is an implementation strategy, not a claim that all ring
+coordinates are cryptanalytically independent.
+
+### 11.4 Language Bias
+
+The fitness engine rewards N-grams found in the embedded vocabulary. Messages
+containing names, code words, transcription errors, abbreviations, dialect,
+foreign words, or vocabulary absent from the dictionary may score poorly even
+when correctly decrypted.
+
+### 11.5 No Historical Plug Count Enforcement
+
+The plugboard map is represented as a symmetric partial permutation. The code
+does not enforce one fixed historical number of cable pairs during the
+evolutionary stage.
+
+### 11.6 Stochastic Refinement
+
+The evolutionary phase uses a time-seeded Mersenne Twister. Repeated runs may
+produce different plugboard candidates and different final scores.
+
+### 11.7 Candidate Representation
+
+When multiple seed guesses survive a Bombe-inspired core test, the function
+returns the last valid partial mapping rather than preserving every surviving
+mapping as a separate candidate. This keeps the implementation compact, but it
+can discard alternative branches.
+
+### 11.8 Output Is a Candidate, Not a Proof
+
+A high N-gram score, plausible IoC, readable segmentation, and attractive PDF do
+not mathematically certify a decryption. Confidence should come from agreement
+between the crib, recovered settings, plugboard consistency, full-message
+semantics, and independent reproduction.
+
+A green terminal is not peer review.
+
+===========================================================================
+CHAPTER XII : THE HYBRID PRINCIPLE
+===========================================================================
+
+The central scientific idea of v16 is algorithmic specialization.
+
+The electrical stage answers:
+
+  "Can this crib, core state, and partial plugboard coexist without
+   contradiction?"
+
+The Ringstellung stage answers:
+
+  "Which electrically surviving key produces the strongest global language
+   structure?"
+
+The evolutionary stage answers:
+
+  "Which additional unlocked plugboard mutations improve that structure?"
+
+The human stage answers:
+
+  "Does the result make operational and semantic sense?"
+
+The segmentation stage answers:
+
+  "Where are the most plausible word boundaries?"
+
+No single component carries the full attack. Each component removes a different
+kind of uncertainty.
+
+Constraint propagation removes impossibility.
+N-gram scoring removes linguistic noise.
+Evolution removes local plugboard uncertainty.
+Human review removes model blindness.
+Dynamic programming removes spacing ambiguity.
+
+That is the v16 architecture.
+
+===========================================================================
+CONCLUSION : FROM RANDOM SEARCH TO CONSTRAINED INFERENCE
+===========================================================================
+
+The previous design placed evolutionary search near the entrance of the maze.
+Version 16 moves it closer to the exit.
+
+First, the program enumerates every supported rotor order. Then it scans
+27,418,560 core states with native CPU workers. At each state, it converts the
+crib into involutive plugboard equations and propagates them until contradiction
+or stabilization. Surviving configurations enter a 676-way left-and-middle
+Ringstellung search, ranked by an IoC-gated dictionary-derived N-gram score.
+Only then does a 200-member, 300-generation mutation engine refine the unlocked
+plugboard letters.
+
+The final output passes through a human override loop, a bounded Viterbi-style
+segmenter, and a simulated historical report generator.
+
+This is not pure brute force.
+This is not pure Bombe logic.
+This is not a classical Genetic Algorithm.
+This is not a trained Markov model.
+This is not a full Hidden Markov Model.
+
+It is a hybrid constraint engine built from deterministic simulation,
+combinatorial pruning, heuristic language features, stochastic refinement,
+dynamic programming, and analyst judgment.
+
+The cipher is not defeated by one giant hammer.
+It is dismantled by a sequence of smaller tools, each shaped for one bolt.
+
+[END OF TRANSMISSION]
