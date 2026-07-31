@@ -1,0 +1,125 @@
+./Enigma-BOMBE-Cryptanalysis-attack-v16 
+
+ + --------------------------------------------------------- +
+ |  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+ |  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+ |  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+ |  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+ |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+ |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
+ |                                                           |
+ |  World War II Enigma — Bombe-Inspired Cryptanalysis       |
+ |  Native C++ Parallel CPU Search Engine                    |
+ |  Evolutionary Plugboard Search • N-gram Language Scoring  |
+ |  Dictionary-Based NLP • Viterbi Word Segmentation         |
+ |                                                           |
+ |  Academic Cryptanalysis Demonstrator v16                  |
+ |                                                           |
+ |  Created by George W. Aravidis | July 2026                |
+ |  Cybersicherheitsforschung                                |
+ |                                                           |
+ |  Ulm Söflingen | Deutschland                              |
+ |  Email address # csec.unbutton326@passinbox.com           |
+ + --------------------------------------------------------- +
+    
+
++ --------------------------------------------------------- +
+| WALZENORDNUNG (ROTOR CONFIGURATION)                      |
++ --------------------------------------------------------- +
+[ 31-07-2026 00:35 ] [*] Automatic rotor-order enumeration enabled: evaluating all 60 ordered selections.
++ --------------------------------------------------------- +
+
+[?] ENTER INTERCEPTED CIPHERTEXT:
+> DWNFS MKCNF JNEWY VSELI IQPOL LYUTV ITANE WPLMM RCMFC GUVTH GMXXH RIHHQ TDMLL UQBFI NCYDW RSCAX WOTGR YPPJZ WDNWR KLMMQ VOTJX HTESY TTTTT SAANO FAQPZ SYJHV RCOVY BRJPR TLBDO OYPBZ UTYAF DZVOB PQVOI GLGBP DGHXD KFILC YJDDO ZIRXN GZOOY SRXJB GSDOK XGIYW LATJP MUORD UUNND ZXRUI NMBRW CNZMK WADDE RIZND PZDJD MROFV HUFIR AJFJC IZMGJ SZOZQ FVOBM AGQEI OICOK XFFEJ AGXHG VAACC RYWIM LRLLD ZIYYJ KVWEF TWBLP XIZGU UJCML EYCJD NNBVW MVERN XHQAZ VBCIA QNNSF HQZGR VGKAA GDNUL COKIW PSZNS YYZLQ PAXEK QVEKQ SNPJH GNFBV WIHNI NAMTX RZZPG TQAYO QPNSC QETUR DDGHK FEJFM FONJP HMTDB KQZUZ ZBOOI VRNXS JMWUE CQUGY BAGIF NVBKX USKME NHAHQ BNLOZ OAXCT AGPLM MTLHS LFLAC NXDAX DXHXS URIKJ ZHNXT AGXHF OBSGT YYYUA ISZTH MWXRM AYCCI XOOCH QEQPQ MVRJX LWRFG VUYCS DRXKI CEOLK TNIIK MQQGK XHZUZ XFFYA OKLSQ ZTMMB JIYEQ DCYQC RTODH TNIEB JEFWD UKWER DMUHI FAXWH KXLTN UNNUN WISGA JJNAB JCCYX VPJCN VGSHJ YRFMC GILYK IXJOL PUTLO MWHGM KIGYI IYKFD QDSPS VQNEN UBRIN MNGFD ECHTU QJWOI HFXOE JQGYC SNFYS QMHOX XQPPU MTTMH KRZQV WDXGR KGOLL FAUWS NAIZD UBTST AFAJB N
+
+[ 31-07-2026 00:36 ] [CRIB AUTO-SCAN] Testing predefined, historically motivated known-plaintext cribs at fixed Offset 0...
+[ 31-07-2026 00:36 ] [*] Found 14 offset-0 crib hypothesis/hypotheses admissible under the no-self-encryption rule. Testing in curated priority order...
+
+[ 31-07-2026 00:36 ] [+] TESTING OFFSET-0 CRIB: OBERKOMMANDODERWEHRMACHT (Length: 24)
+
+[ 31-07-2026 00:36 ] [FIXED-OFFSET MODE] Evaluating the selected crib only at Offset 0.
+[ 31-07-2026 00:36 ] [*] STARTING NATIVE MULTITHREADED BOMBE-INSPIRED CONSTRAINT SEARCH...
+      [*] Core state space: 60 rotor orders x 26 right-rotor ring settings x 17,576 start positions = 27,418,560 states.
+      [*] Launching 4 worker threads with precomputed rotor mappings and thread-local buffers.
+      [*] Crib offsets evaluated per core state: 1.
+      [~] CORE-STATE SCAN: [##############################] 100% | States: 27418560 / 27418560
+
+[ 31-07-2026 00:40 ] [*] Bombe-inspired constraint sweep completed in 281.248 seconds.
+[ 31-07-2026 00:40 ] [-] No configuration survived this crib. Loading the next candidate... (The Axis gets this round.)
+
+[ 31-07-2026 00:40 ] [+] TESTING OFFSET-0 CRIB: WETTERVORHERSAGE (Length: 16)
+
+[ 31-07-2026 00:40 ] [FIXED-OFFSET MODE] Evaluating the selected crib only at Offset 0.
+[ 31-07-2026 00:40 ] [*] STARTING NATIVE MULTITHREADED BOMBE-INSPIRED CONSTRAINT SEARCH...
+      [*] Core state space: 60 rotor orders x 26 right-rotor ring settings x 17,576 start positions = 27,418,560 states.
+      [*] Launching 4 worker threads with precomputed rotor mappings and thread-local buffers.
+      [*] Crib offsets evaluated per core state: 1.
+      [~] CORE-STATE SCAN: [##############################] 100% | States: 27418560 / 27418560
+
+[ 31-07-2026 00:44 ] [*] Bombe-inspired constraint sweep completed in 193.278 seconds.
+      [*] Found 2039 candidate configurations satisfying the current crib constraints.
+[ 31-07-2026 00:44 ] [+] Candidate configurations found. Phase 1 constraint search completed.
+
++ --------------------------------------------------------- +
+| PHASE 1.5: RINGSTELLUNG SEARCH (N-GRAM SCORING)         |
++ --------------------------------------------------------- +
+    31-07-2026 00:44 - [*] Running multithreaded Ringstellung search with N-gram language scoring across 2039 Phase-1 candidates...
+    [~] RING SEARCH: [##############################] 100% | Candidates: 2039 / 2039
+    31-07-2026 00:45 - [*] Ringstellung candidate search completed in 113.253 seconds.
+
+    31-07-2026 00:45 - [+] BEST-SCORING CORE CANDIDATE: Pos: ZSK | Ring: ACP | Rotors: IV-II-V | Language score: 5335.21
+    [*] CRYPTO-NERD NOTE: In this three-rotor model, some left-rotor position/ring pairs
+        share the same effective wiring offset; the displayed key is one representative of that equivalence class.
+
+    31-07-2026 00:45 - [*] PHASE 2: MUTATION-BASED EVOLUTIONARY PLUGBOARD SEARCH (Elitism Active)...
+    [*] Evolutionary population initialized. Evaluating plugboard candidates...
+    [!] NOTE: Interrupting now will terminate the search before all generations are evaluated.
+
+    [EVOLUTIONARY SEARCH] [###############] 100% | SEARCH COMPLETE | FINAL SCORE: 10920.94
+
+    WETTERVORHERSAGEOBERKOMMANDODERWEHRMACHTMELDETANALLEVERBAENDESTOPPANZERABTE
+    ILUNGRUECKTNACHOSTENVORSTOPINFANTERIESICHERTBRUECKENUNDSTRASSENSTOPARTILLER
+    IEBEREITFUERFEUERUNTERSTUETZUNGSTOPLUFTWAFFEMELDETFEINDLICHEBEWEGUNGIMNORDA
+    BSCHNITTSTOPAUFKLAERUNGHATNEUESTELLUNGENERKANNTSTOPPIONIEREERRICHTENUEBERGA
+    ENGEFUERPANZERSTOPNACHSCHUBERREICHTFRONTLINIEPLANMAESSIGSTOPMUNITIONUNDTREI
+    BSTOFFAUSREICHENDVORHANDENSTOPFUNKVERBINDUNGMITHAUPTQUARTIERGESICHERTSTOPKO
+    MPANIEHAELTVERTEIDIGUNGSLINIEOHNEVERLUSTESTOPBATAILLONERWARTETWEITEREBEFEHL
+    ESTOPRESERVEBLEIBTINBEREITSCHAFTSTOPFEINDZEIGTVERSTAERKTEAKTIVITAETIMSUEDAB
+    SCHNITTSTOPSTURMGESCHUETZUNTERSTUETZTVORMARSCHDERINFANTERIESTOPSANITAETSDIE
+    NSTVERSORGTVERWUNDETEUMGEHENDSTOPMARSCHGESCHWINDIGKEITWIRDBEIBEHALTENSTOPAN
+    GRIFFBEGINNTNACHEMPFANGDESLOSUNGSWORTESSTOPALLEFUNKSPRUECHENACHSCHLUESSELVE
+    RFAHRENUEBERMITTELNSTOPENDEDERMELDUNGSTOP
+
+    31-07-2026 00:46 - [+] Evolutionary search complete. Best-scoring plugboard candidate selected.
+
++ --------------------------------------------------------- +
+| PHASE 3: MANUAL REVIEW / PLUGBOARD OVERRIDE             |
++ --------------------------------------------------------- +
+    [*] Automated stages produced the current best-scoring plaintext candidate.
+    [*] Review the candidate, optionally adjust a plugboard pair, then press ENTER or type 'PERFEKT'.
+
+[>] CURRENT PLUGBOARD: BZ XI YV WN UJ TG SF RL QD CM EK HO 
+[>] CURRENT DECRYPT:
+    WETTE RVORH ERSAG EOBER KOMMA NDODE RWEHR MACHT MELDE TANAL LEVER BAEND ESTOP PANZE RABTE ILUNG RUECK TNACH OSTEN VORST OPINF ANTER IESIC HERTB RUECK ENUND STRAS SENST OPART ILLER IEBER EITFU ERFEU ERUNT ERSTU ETZUN GSTOP LUFTW AFFEM ELDET FEIND LICHE BEWEG UNGIM NORDA BSCHN ITTST OPAUF KLAER UNGHA TNEUE STELL UNGEN ERKAN NTSTO PPION IEREE RRICH TENUE BERGA ENGEF UERPA NZERS TOPNA CHSCH UBERR EICHT FRONT LINIE PLANM AESSI GSTOP MUNIT IONUN DTREI BSTOF FAUSR EICHE NDVOR HANDE NSTOP FUNKV ERBIN DUNGM ITHAU PTQUA RTIER GESIC HERTS TOPKO MPANI EHAEL TVERT EIDIG UNGSL INIEO HNEVE RLUST ESTOP BATAI LLONE RWART ETWEI TEREB EFEHL ESTOP RESER VEBLE IBTIN BEREI TSCHA FTSTO PFEIN DZEIG TVERS TAERK TEAKT IVITA ETIMS UEDAB SCHNI TTSTO PSTUR MGESC HUETZ UNTER STUET ZTVOR MARSC HDERI NFANT ERIES TOPSA NITAE TSDIE NSTVE RSORG TVERW UNDET EUMGE HENDS TOPMA RSCHG ESCHW INDIG KEITW IRDBE IBEHA LTENS TOPAN GRIFF BEGIN NTNAC HEMPF ANGDE SLOSU NGSWO RTESS TOPAL LEFUN KSPRU ECHEN ACHSC HLUES SELVE RFAHR ENUEB ERMIT TELNS TOPEN DEDER MELDU NGSTO P 
+
+[?] Enter two letters to replace a plugboard pair (e.g. HJ), or press ENTER / type 'PERFEKT' to accept:
+> PERFEKT
+
+[>] VITERBI-SEGMENTED PLAINTEXT CANDIDATE:
+    WETTERVORHERSAGE OBERKOMMANDO DER WEHRMACHT MELDET AN ALLE VERBAENDE STOP
+    PANZERABTEILUNG RUECKT NACH OSTEN VOR STOP INFANTERIE SICHERT BRUECKEN UND
+    STRASSEN STOP ARTILLERIE BEREIT FUER FEUERUNTERSTUETZUNG STOP LUFTWAFFE MELDET
+    FEINDLICHEBEWEGUNG IM NORD ABSCHNITT STOP AUFKLAERUNG HAT NEUE STELLUNGEN
+    ERKANNT STOP PIONIERE ER RICHTEN UEBERGAENGE FUER PANZER STOP NACHSCHUB ERREICHT
+    FRONTLINIE PLANMAESSIG STOP MUNITION UND TREIBSTOFF AUSREICHEND VORHANDEN STOP
+    FUNKVERBINDUNG MIT HAUPTQUARTIER GESICHERT STOP KOMPANIE HAELT
+    VERTEIDIGUNGSLINIE OHNEVERLUSTE STOP BATAILLON ERWARTET WEITERE BEFEHLE STOP
+    RESERVE BLEIBT IN BEREITSCHAFT STOP FEIND ZEIGT VERSTAERKTE AKTIVITAET IM SUED
+    ABSCHNITT STOP STURMGESCHUETZ UNTERSTUETZT VORMARSCH DER INFANTERIE STOP
+    SANITAETSDIENST V ER SORGT VERWUNDETE UMGEHEND STOP MARSCH G ES CH WIND IGKEIT
+    WIRD BEIBEHALTEN STOP ANGRIFF BEGINNT NACH EMPFANG DES LOSUNGSWORTES STOP ALLE
+    FUNKSPRUECHE NACH SCHLUESSEL V ER FAHREN UEBERMITTELN STOP ENDE DER MELDUNG STOP
+
+31-07-2026 00:46 - [*] GENERATING SIMULATED HISTORICAL-STYLE 'ULTRA' DOSSIER VIA PYTHON/MATPLOTLIB...
+[+] SUCCESS: Simulated historical-style dossier generated as 'Hut6_ULTRA_Report_Classified.pdf'
+

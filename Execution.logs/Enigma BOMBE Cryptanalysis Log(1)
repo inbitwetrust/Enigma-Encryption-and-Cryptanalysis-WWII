@@ -1,0 +1,130 @@
+./Enigma-BOMBE-Cryptanalysis-attack-v5
+
+ + --------------------------------------------------------- +
+ |                                                           |
+ |  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+ |  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+ |  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+ |  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+ |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+ |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
+ |                                                           |
+ |  WWII - Enigma Bombe Cryptanalysis Attack                 |
+ |  Markov-Chain - Viterbi - NLP Pruning Enabled             |
+ |  Genetic Algorithms + Markov Log-Likelihood Engine        |
+ |                                                           |
+ |  Created by George W. Aravidis | Ulm Söflingen            |
+ |  Email address # csec.unbutton326@passinbox.com           |
+ + --------------------------------------------------------- +
+    
+
++ --------------------------------------------------------- +
+| WALZENORDNUNG (ROTOR CONFIGURATION)                     |
++ --------------------------------------------------------- +
+[*] Rotor 1 (Available: I, II, III, IV, V): I
+[*] Rotor 2 (Available: II, III, IV, V): II
+[*] Rotor 3 (Available: III, IV, V): III
+
+[?] ENTER INTERCEPTED CIPHERTEXT:
+> WOPYLXWOMAYDKTJOKITTJTTZXONUKHFMBKZZNWSYJHNWGKJQFFDDPXKQPUCEEHFLRFPFHODIMKLYKACSYSBMUCSJEPVYYVDCLNUVLYCGQBWVXEBWROPRFTPMUNGCUOJNWFGHFVDHVZBYYWOBZEGDOIYPISDGRZGIRFTQTJEIBOJNPZTGZXCAZLAILECNWUSXHIYQGQGCJWOYVPAARFEDRXAGYSWGZLOQWBYEKJWCRMIYDZMDFYJNVSWIKRCPXRUQHHSXYEBILSQJFRSPRVKPCBQNFZVRVOQONNQDVSEYNXHULQFLQTNSAADXLXHYZPAZMYCWLMBBUYOGIUDLGRPUIGKMUQQJBQFLIUBDBNKQDPGRQYQPRUEIPWUGYWZSMUTVGHUJWTOLHZNILXFNVOGMCKFGRKVPPSHVRCRGX
+
+[?] ENTER KNOWN PLAINTEXT (CRIB):
+> STRENGGEHEIMFUNKSPRUCH
+
++ --------------------------------------------------------- +
+| PHASE 1: AUTONOMOUS TURING BOMBE SEARCH                 |
++ --------------------------------------------------------- +
+
+    [CRIB ROOM] Aligning Crib... Scanning intercept for logical fits...
+
+    [*] Offset: 399 | Status: VALID FIT (NO CLASHES)
+    [CT] ...UGYWZSMUTVGHUJWTOLHZNILXFNVOGMCKFGRKVPPSHVRCRGX
+    [CR]                             STRENGGEHEIMFUNKSPRUCH
+
+    [!] BOFH DEMO MODE: Animation complete. Locking target exclusively to Offset 0.
+    [*] Found 1 guaranteed offset. Unleashing the Bombe...
+
+    [!] STARTING BARE-METAL MULTITHREADED BOMBE SEARCH...
+    [*] Found 1 valid Crib Offsets.
+    [*] Unlocking 4 CPU Cores (O(1) Matrix & Zero-Allocation)!
+    [~] BOMBE SCAN: [#############################-] 99% | Attempts: 11877932 / 11881376
+
+    [*] Bombe sweep completed in 215.263 seconds.
+    [*] Found 25 mathematical equivalents (Hits).
+
++ --------------------------------------------------------- +
+| PHASE 1.5: FAST GENETIC EVALUATION (F.G.A.)             |
++ --------------------------------------------------------- +
+    [!] Running Fast Genetic AI on all 25 equivalents to isolate the True State...
+    [>] Testing TRUE Pos: AAB | Ring: AAA | Optimized F.G.A. Score: 845.107
+    [>] Testing TRUE Pos: ABB | Ring: ABA | Optimized F.G.A. Score: 811.525
+    [>] Testing TRUE Pos: ACB | Ring: ACA | Optimized F.G.A. Score: 836.165
+    [>] Testing TRUE Pos: AFB | Ring: AFA | Optimized F.G.A. Score: 875.041
+    [>] Testing TRUE Pos: AGB | Ring: AGA | Optimized F.G.A. Score: 834.425
+    [>] Testing TRUE Pos: AHB | Ring: AHA | Optimized F.G.A. Score: 815.821
+    [>] Testing TRUE Pos: AIB | Ring: AIA | Optimized F.G.A. Score: 5223.5
+    [>] Testing TRUE Pos: AJB | Ring: AJA | Optimized F.G.A. Score: 4031.67
+    [>] Testing TRUE Pos: AKB | Ring: AKA | Optimized F.G.A. Score: 801.023
+    [>] Testing TRUE Pos: ALB | Ring: ALA | Optimized F.G.A. Score: 5223.5
+    [>] Testing TRUE Pos: AMB | Ring: AMA | Optimized F.G.A. Score: 921.21
+    [>] Testing TRUE Pos: ANB | Ring: ANA | Optimized F.G.A. Score: 855.616
+    [>] Testing TRUE Pos: AOB | Ring: AOA | Optimized F.G.A. Score: 5117.16
+    [>] Testing TRUE Pos: APB | Ring: APA | Optimized F.G.A. Score: 882.907
+    [>] Testing TRUE Pos: AQB | Ring: AQA | Optimized F.G.A. Score: 937.095
+    [>] Testing TRUE Pos: ARB | Ring: ARA | Optimized F.G.A. Score: 4306.88
+    [>] Testing TRUE Pos: ASB | Ring: ASA | Optimized F.G.A. Score: 887.808
+    [>] Testing TRUE Pos: ATB | Ring: ATA | Optimized F.G.A. Score: 796.283
+    [>] Testing TRUE Pos: AUB | Ring: AUA | Optimized F.G.A. Score: 889.283
+    [>] Testing TRUE Pos: AVB | Ring: AVA | Optimized F.G.A. Score: 834.176
+    [>] Testing TRUE Pos: AWB | Ring: AWA | Optimized F.G.A. Score: 820.498
+    [>] Testing TRUE Pos: AXB | Ring: AXA | Optimized F.G.A. Score: 849.143
+    [>] Testing TRUE Pos: AYB | Ring: AYA | Optimized F.G.A. Score: 842.554
+    [>] Testing TRUE Pos: AZB | Ring: AZA | Optimized F.G.A. Score: 838.679
+    [>] Testing TRUE Pos: ZEB | Ring: AFA | Optimized F.G.A. Score: 5223.5
+
+    [+] >>> FALSE STOPS EVISCERATED <<< 
+    [+] TRUE MACHINE STATE VERIFIED: Pos AIB | Ring AIA
+
+    [!] PHASE 2: FULL DARWINIAN OPTIMIZATION (150 Generations)...
+    [*] Final Genetic Matrix Initialized. Evolving...
+    [!] WARNING: DO NOT INTERRUPT THE EVOLUTIONARY PROCESS!
+
+    [BOMBE AI] [###############] 100% | EVOLUTION COMPLETE | FINAL FITNESS: 5223.50
+
+    STRENGGEHEIMFUNKSPRUCHANHAUPTQUARTIERPANZERDIVISIONMELDETFEINDLICHEINFANTER
+    IEUNDPANZERINABSCHNITTPOSITIONQUADRATACHTZWEINULLARTILLERIEUNDSTURMGESCHUET
+    ZEBEREITENGEGENANGRIFFLUFTUNTERSTUETZUNGDRINGENDERFORDERLICHWEGENSTARKERFEI
+    NDDRUCKDICHTENNEBELUNDREGENMACHENAUFKLAERUNGSFLUEGEUNMOEGLICHVERLUSTESCHWER
+    EABERSTELLUNGSTABILMUNITIONUNDTREIBSTOFFEXTREMKNAPPANFORDERNNACHSCHUBSOFORT
+    OPERATIONBLITZKRIEGWEITERHINBEREITSIEGENDENULL
+
+    [+] Evolution complete. Autonomous Matrix locked.
+
++ --------------------------------------------------------- +
+| PHASE 3: HUT 6 OVERRIDE TERMINAL                        |
++ --------------------------------------------------------- +
+    [*] BOMBE AI resolved the text autonomously. Hit ENTER or type 'PERFEKT' to generate PDF.
+
+[>] CURRENT PLUGBOARD: VQ KC XR UT LZ EB OF NG MW SY JH AI 
+[>] CURRENT DECRYPT:
+    STREN GGEHE IMFUN KSPRU CHANH AUPTQ UARTI ERPAN ZERDI VISIO NMELD ETFEI NDLIC HEINF ANTER IEUND PANZE RINAB SCHNI TTPOS ITION QUADR ATACH TZWEI NULLA RTILL ERIEU NDSTU RMGES CHUET ZEBER EITEN GEGEN ANGRI FFLUF TUNTE RSTUE TZUNG DRING ENDER FORDE RLICH WEGEN STARK ERFEI NDDRU CKDIC HTENN EBELU NDREG ENMAC HENAU FKLAE RUNGS FLUEG EUNMO EGLIC HVERL USTES CHWER EABER STELL UNGST ABILM UNITI ONUND TREIB STOFF EXTRE MKNAP PANFO RDERN NACHS CHUBS OFORT OPERA TIONB LITZK RIEGW EITER HINBE REITS IEGEN DENUL L 
+
+[?] Typos? Enter 2 letters (e.g. HJ), or hit ENTER / type 'PERFEKT' to finish:
+> PERFEKT
+
++ --------------------------------------------------------- +
+| PHASE 3: NLP MARKOV VITERBI RECONSTRUCTION              |
++ --------------------------------------------------------- +
+
+[>] RECONSTRUCTED TRANSMISSION:
+    STRENGGEHEIM FUNKSPRUCH AN HAUPTQUARTIER PANZERDIVISION MELDET FEINDLICHE
+    INFANTERIE UND PANZER IN ABSCHNITT POSITION QUADRAT ACHT ZWEI NULL ARTILLERIE
+    UND STURMGESCHUETZE BEREITEN GEGENANGRIFF LUFTUNTERSTUETZUNG DRINGEND
+    ERFORDERLICH WEGEN STARKER FEINDDRUCK DICHTEN NEBEL UND REGEN MACHEN
+    AUFKLAERUNGSFLUEGE UNMOEGLICH VERLUSTE SCHWERE ABER STELLUNG STABIL MUNITION UND
+    TREIBSTOFF EXTREM KNAPP ANFORDERN NACHSCHUB SOFORT OPERATION BLITZKRIEG
+    WEITERHIN BEREIT SIEG ENDE NULL
+
+[*] GENERATING 'ULTRA' CLASSIFIED 4-PAGE DOSSIER VIA PYTHON MATPLOTLIB BRIDGE...
+[+] SUCCESS: Classified 4-Page Report typed up and sealed as 'Hut6_ULTRA_Report_CLASSIFIED.pdf'
+
