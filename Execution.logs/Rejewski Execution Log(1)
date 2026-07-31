@@ -1,0 +1,58 @@
+./03.\ CrackEnigma-Rejewski-Method 
++ --------------------------------------------------------- +
+|  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+|  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+|  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+|  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+|  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+|  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
+|                                                           |
+|  World War II Enigma — Cryptanalysis Exploitation Tool    |
+|  Rejewski Chain Footprint Extractor & Matcher             |
+|  High-Speed Target Index Database Linear Search           |
+|  Friendly AI-Assisted Decryption Companion                |
+|                                                           |
+|  Academic Cryptanalysis Demonstrator v16                  |
+|                                                           |
+|  Created by George W. Aravidis                            |
+|  Cybersicherheitsforschung                                |
+|                                                           |
+|  Ulm Söflingen | Deutschland                              |
+|  Email address # csec.unbutton326@passinbox.com           |
++ --------------------------------------------------------- +
+
+[*] Welcome! Loading your intercepted messages and extracting permutations...
+[+] Fantastic job! Successfully analyzed 500 messages.
+[+] Your target Mathematical Fingerprint is:
+--> AD:1313 BE:223388 CF:11115566
+
+[*] Initiating high-speed catalog scan. Please hold tight...
+[##################################################] 100 %
+
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:AGM ROTORS:I,III,IV
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:GCV ROTORS:I,IV,II
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:CUL ROTORS:I,IV,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:YPV ROTORS:I,IV,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:CVZ ROTORS:I,V,II
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:BCQ ROTORS:II,III,IV
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:PDD ROTORS:III,II,I
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:VYL ROTORS:III,II,I
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:FFA ROTORS:III,IV,I
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:PPW ROTORS:III,IV,V
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:WNV ROTORS:IV,I,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:JPW ROTORS:IV,II,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:TDL ROTORS:IV,II,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:YMV ROTORS:IV,III,II
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:MCO ROTORS:IV,V,I
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:ESF ROTORS:IV,V,II
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:IJX ROTORS:V,I,II
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:LOL ROTORS:V,I,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:RFL ROTORS:V,I,IV
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:FYR ROTORS:V,II,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:WXK ROTORS:V,II,III
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:NRA ROTORS:V,II,IV
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:XZZ ROTORS:V,III,I
+[=>] Match gracefully extracted: AD:1313 BE:223388 CF:11115566 | KEY:TCD ROTORS:V,III,IV
+
+[*] Database scan completed smoothly in 0.1289 seconds.
+[*] Ready for your next decryption task! Have a wonderful day!
