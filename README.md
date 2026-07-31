@@ -560,8 +560,9 @@ For rigorous experiments, researchers may wish to modify the source so that the 
 
 ## Academic & Legal Disclaimer  
 
-Written by George W. Aravidis  
-Email Contact: csec.unbutton326@passinbox.com  
+**George W. Aravidis**  
+Ulm-Söflingen, Germany · July 2026  
+Contact: `csec.unbutton326@passinbox.com`
 
 This repository is explicitly designated for academic research, historical reconstruction, and satisfying an intense nerd curiosity.  
 Do not use this to encrypt modern sensitive communications; a standard smartphone can crack this cipher faster than you can brew a cup of Earl Grey tea.  
