@@ -1,0 +1,69 @@
+./Zygalski-Sheets-Cryptanalysis-v1.2 
+
+ + --------------------------------------------------------- +
+ |  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+ |  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+ |  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+ |  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+ |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+ |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
+ |                                                           |
+ |  Zygalski Sheets Cryptanalysis Simulator v1.2             |
+ |  Patched Edition: Dynamic Indicator Parsing               |
+ |                                                           |
+ |  Academic Cryptanalysis Demonstrator v16                  |
+ |                                                           |
+ |  Created by George W. Aravidis                            |
+ |  Cybersicherheitsforschung                                |
+ |                                                           |
+ |  Ulm Söflingen | Deutschland                              |
+ |  Email address # csec.unbutton326@passinbox.com           |
+ + --------------------------------------------------------- +
+
+
+[*] System Initialized. Awaiting intercepted messages file.
+[?] Enter the filename containing the intercepts (e.g., intercepts.txt): intercepts.txt
+[*] Parsing file and filtering for 'female' characteristics...
+    [+] Found Type 14 female with Indicator ZFP: EPJEWY
+    [+] Found Type 25 female with Indicator MNY: GEEREN
+    [+] Found Type 14 female with Indicator STD: IAKIUE
+    [+] Found Type 14 female with Indicator INC: GIRGNR
+    [+] Found Type 36 female with Indicator INC: GIRGNR
+    [+] Found Type 36 female with Indicator UQZ: QQVTTV
+    [+] Found Type 36 female with Indicator NPB: BBTJVT
+    [+] Found Type 25 female with Indicator EIQ: DKQXKB
+    [+] Found Type 14 female with Indicator OVD: FJDFRH
+    [+] Found Type 25 female with Indicator DJA: ZJEDJZ
+    [+] Found Type 36 female with Indicator JAO: GLJVQJ
+    [+] Found Type 25 female with Indicator SPZ: KTEUTX
+    [+] Found Type 14 female with Indicator OEP: ZIDZOL
+    [+] Found Type 14 female with Indicator IOS: KNGKXO
+    [+] Found Type 36 female with Indicator FWO: YXLHVL
+    [+] Found Type 25 female with Indicator NXY: EZFLZI
+    [+] Found Type 36 female with Indicator TLT: FHSCOS
+    [+] Found Type 36 female with Indicator QSI: UQOKNO
+    [+] Found Type 36 female with Indicator KWZ: WQDIWD
+    [+] Found Type 14 female with Indicator LBR: VNIVKO
+    [+] Found Type 14 female with Indicator ZOJ: LMDLYX
+    [+] Found Type 14 female with Indicator DHF: HEVHNY
+    [+] Found Type 36 female with Indicator KMD: ALUPUU
+    [+] Found Type 36 female with Indicator XGP: ZLUTQU
+    [+] Found Type 36 female with Indicator DSU: GWFLVF
+    [+] Found Type 25 female with Indicator OVE: LFGEFK
+    [+] Found Type 25 female with Indicator FRO: CLUMLC
+
+[*] File parsing complete.
+    Total messages scanned: 300
+    Total 'females' extracted: 27
+
+[*] Outstanding! Stacking the digital Zygalski sheets based on extracted data...
+[*] Shining the analog lamps... searching 1,054,560 combinations.
+
+    [~] Scanning Rotor Orders: 49 / 60 completed...
+[!] ZYGALSKI MATCH FOUND [!] 
+    Rotor Order: 2-1-4
+    Ringstellung: FSU
+    [~] Scanning Rotor Orders: 60 / 60 completed...          
+
+[*] Search finished!
+[*] Excellent work today, cryptanalyst! Goodbye.
