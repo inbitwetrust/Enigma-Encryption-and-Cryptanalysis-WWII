@@ -55,7 +55,8 @@ void print_banner() {
 |                                                           |
 |  Ulm Söflingen | Deutschland                              |
 |  Email address # csec.unbutton326@passinbox.com           |
-+ --------------------------------------------------------- +)" << "\n\n";
++ --------------------------------------------------------- +
+        )" << "\n\n";
 }
 
 int main() {
