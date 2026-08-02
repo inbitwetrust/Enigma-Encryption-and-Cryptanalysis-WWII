@@ -20,20 +20,20 @@
 [WARNING: EXTREME CRYPTOGRAPHIC CONTENT AHEAD]...
 
 ===========================================================================
-CHAPTER I : THE GENESIS OF CHAOS (A BRIEF HISTORY OF ENIGMA)
+--[ CHAPTER I : THE GENESIS OF CHAOS (A BRIEF HISTORY OF ENIGMA)
 ===========================================================================
 
 Long before we were compiling C++ on multi-core processors, encryption was a 
 game of ink, paper, and physical gears. In 1918, a German engineer named 
-Arthur Scherbius filed a patent for a mechanical cipher machine. He called 
-it "Enigma", from the Greek word for riddle. 
+Arthur Scherbius[1] filed a patent[2] for a mechanical cipher machine.
+He called it "Enigma", from the Greek word for riddle. 
 
 Initially, Scherbius tried to sell his invention to banks and post offices to 
 protect commercial secrets. It was a flop. Businessmen found it too 
 expensive. But the German military, stinging from the intelligence failures 
 of World War I, saw its potential. By the 1930s, the Wehrmacht, Luftwaffe, 
 and Kriegsmarine had adopted heavily modified, hyper-complex versions of the 
-Enigma to secure their communications.
+Enigma to secure their communications[3].
 
 They believed it was mathematically unbreakable. And for a long time, they 
 were absolutely right. It gave the Axis powers a devastating operational 
@@ -44,7 +44,7 @@ But what made it so terrifyingly secure? To understand the cure, we must
 first understand the disease.
 
 ===========================================================================
-CHAPTER II : THE MECHANICAL NIGHTMARE (HOW ENCRYPTION WORKED)
+--[ CHAPTER II : THE MECHANICAL NIGHTMARE (HOW ENCRYPTION WORKED)
 ===========================================================================
 
 Imagine a typewriter mated with a slot machine, designed by a paranoid 
@@ -62,7 +62,7 @@ mathematician. The Enigma machine consisted of several key components:
 --- THE LIFECYCLE OF A SINGLE KEYSTROKE ---
 
 Let's say you press the letter 'A' on a beautiful Tuesday morning.
-A 4.5-volt battery sends an electrical pulse into the machine.
+A 4.5-volt battery sends an electrical pulse into the machine.[4]
 
 [PHASE A - THE PLUGBOARD]: 
 The current enters the Steckerbrett. If the operator has connected 'A' to 'F' 
@@ -91,13 +91,13 @@ Rotor 3 changes 'M' to 'W'.
 The 'W' hits the Steckerbrett. If 'W' is wired to 'Z', the current becomes 'Z'.
 
 [PHASE F - THE LIGHT]: 
-The letter 'Z' lights up on the lampboard. 
+The letter 'Z' lights up on the lampboard.
 
 --- THE ODOMETER EFFECT ---
 
 If this was a static system, it would be a simple substitution cipher. You 
 could break it with a pencil. But here is the devilish part: 
-EVERY TIME YOU PRESS A KEY, THE RIGHT ROTOR STEPS FORWARD BY ONE POSITION.
+EVERY TIME YOU PRESS A KEY, THE RIGHT ROTOR STEPS FORWARD BY ONE POSITION.[5]
 
 If you press 'A' a second time, the internal wiring has physically changed 
 shape. The current takes a completely different path. The second 'A' might 
@@ -128,13 +128,13 @@ a standard Wehrmacht Enigma was:
 The Germans were confident. Perhaps too confident.
 
 ===========================================================================
-CHAPTER III : THE GEEKS WHO SAVED THE WORLD (BLETCHLEY PARK)
+--[ CHAPTER III : THE GEEKS WHO SAVED THE WORLD (BLETCHLEY PARK)
 ===========================================================================
 
 While bombs fell on London, a different kind of war was being waged in 
-Buckinghamshire, at a Victorian mansion known as Bletchley Park. Here, the 
+Buckinghamshire, at a Victorian mansion known as Bletchley Park[6]. Here, the 
 British gathered chess champions, crossword puzzle experts, linguists, and 
-mathematicians. Among them were Alan Turing and Gordon Welchman.
+mathematicians. Among them were Alan Turing [7] and Gordon Welchman. [8]
 
 Turing realized that 158 Quintillion combinations could not be solved by 
 human brains. It required a machine to defeat a machine.
@@ -173,7 +173,7 @@ The war was shortened by an estimated two to four years, and millions of
 lives were saved, all because of geeks in a hut.
 
 ===========================================================================
-CHAPTER IV : THE 21ST CENTURY ARSENAL (MODERN ARCHITECTURE)
+--[ CHAPTER IV : THE 21ST CENTURY ARSENAL (MODERN ARCHITECTURE)
 ===========================================================================
 
 Fast forward to year 2026. We are not using brass gears or relay 
@@ -187,7 +187,7 @@ Artificial Intelligence, Meta-Heuristics, and Natural Language Processing.
 Let's tear down the source code and look at the engine block.
 
 ===========================================================================
-CHAPTER V : PHASE 1 - THE BARE-METAL BOMBE
+--[ CHAPTER V : PHASE 1 - THE BARE-METAL BOMBE
 ===========================================================================
 
 The first phase of our code is a digital tribute to Turing's Bombe. However, 
@@ -231,10 +231,11 @@ False Stops and 1 True Stop).
 Now, we must find the True Stop. Enter Charles Darwin.
 
 ===========================================================================
-CHAPTER VI : PHASE 1.5 & 2 - DARWIN'S STECKERBRETT
+--[ CHAPTER VI : PHASE 1.5 & 2 - DARWIN'S STECKERBRETT
+===========================================================================
 
 The Bombe cannot find the full Steckerbrett; it only finds fragments.
-To solve the rest of the plugboard, we built a Genetic Algorithm (GA).
+To solve the rest of the plugboard, we built a Genetic Algorithm (GA). [9]
 
 Why? Because traditional algorithms get stuck in "local maxima". If you
 change one wire and the decryption gets worse, a standard algorithm gives up.
@@ -278,12 +279,11 @@ know what is German?
 
 ===========================================================================
 
-
 Here is where our project faced its greatest crisis. Initially, we used a
 simple Markov Chain that gave positive points for finding valid German
-4-letter groups (Quadgrams).
+4-letter groups (Quadgrams). [10]
 
-THE AI REWARD HACKING INCIDENT:
+THE GA REWARD HACKING INCIDENT:
 
 The Genetic Algorithm is a sociopath. It realized it could maximize its score
 by wiring the plugboard to output "CHEN CHEN CHEN CHEN" endlessly. It didn't
@@ -295,7 +295,7 @@ Engine (MarkovChainEngine).
 [THE ABSTRACT CODE LOGIC: score_text]
 
 1. The Index of Coincidence (IoC): This is the guillotine. The IoC calculates
-the probability that two random letters in the text are identical. 
+the probability that two random letters in the text are identical. [11]
 
 	German language IoC = ~0.076.
 	Random Noise IoC = ~0.038.
@@ -332,14 +332,15 @@ float score_text(const string& text) {
 }
 
 ===========================================================================
-CHAPTER VIII : THE ORACLE (HIDDEN MARKOV MODELS & VITERBI)
+--[ CHAPTER VIII : THE ORACLE (HIDDEN MARKOV MODELS & VITERBI)
+===========================================================================
 
 The GA successfully decrypts the text, but military operators transmitted in
 5-letter blocks (e.g., DASBO OTIST VERSE NKTNU LL). It's unreadable. We
 need to inject spaces back where they belong.
 
 To do this, we use a Hidden Markov Model (HMM) parsed via the Viterbi
-Algorithm.
+Algorithm. [12]
 
 [THE ABSTRACT CODE LOGIC: markov_viterbi_segmentation]
 
@@ -373,10 +374,10 @@ for (int i = 1; i <= n; ++i) {
         }
     }
 }
-// Follow breadcrumbs backwards to reconstruct spaces!
 
 ===========================================================================
-CHAPTER IX : EPILOGUE
+--[ CHAPTER IX : EPILOGUE
+===========================================================================
 
 We took the mechanical ghost of 1940 and forced it into the modern silicon
 arena. We used multithreading to build a digital Bombe, evolutionary biology
@@ -390,5 +391,101 @@ through the cracks.
 
 The ghosts of Bletchley Park are smiling.
 
+===========================================================================
+--[ REFERENCES
+===========================================================================
+
+[1]. Scherbius und die ENIGMA 
+     https://en.wikipedia.org/wiki/Arthur_Scherbius
+
+[2]. German Patent and Trade Mark Office
+
+     https://www.dpma.de/docs/dpma/veroeffentlichungen/
+     de416219a_chiffriermaschine1918.pdf
+    
+     https://www.dpma.de/docs/dpma/de425147a_chiffriermaschine1920.pdf
+
+     https://www.dpma.de/docs/dpma/veroeffentlichungen/
+     de378238a_chiffriermaschine1921.pdf
+     
+     https://www.dpma.de/docs/dpma/veroeffentlichungen/
+     de536556a_chiffriermaschine1929.pdf
+     
+[3]. The National Museum of Computing (TNMOC) - Enigma Machine
+     https://www.tnmoc.org/bh-2-the-enigma-machine
+
+
+[4]. A 4.5V battery produced by the firm Batteriefabrik Jäger KG
+
+     https://www.chiffriermaschine.com/explore/
+     enigma-battery-62c70660d27fe2b3064f4b2a-c0009
+     
+[5]. Enigma Machine Simulator
+     https://decodecipher.net/enigma-machine.html
+     
+[6]. Bletchley Park
+     https://www.bletchleypark.org.uk/
+     
+[7]. Alan Turing - British Mathematician and Logician
+     https://www.britannica.com/biography/Alan-Turing
+     
+[8]. Gordon Welchman
+     https://bletchleypark.org.uk/wp-content/uploads/record_attachments/1839.pdf
+     
+[9]. The implementation of the Genetic Algorithm for the Enigma's Steckerbrett
+     in this repository was heavily inspired by the theoretical
+     foundations found in:
+     
+     Genetic algorithm attack on Enigma’s plugboard
+     Åvald Åslaugson Sommervoll, Leif Nilsen
+     Pages 194-226 | Published online: 13 Mar 2020
+     https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1721617
+     
+     Holland, J. H. (1975)
+     Adaptation in Natural and Artificial Systems
+     
+     Friedman, W. F. (1922)
+     The Index of Coincidence and its Applications in Cryptography
+     
+[10]. On Language Modeling & Fitness Scoring:
+
+      Markov, A. A. (1913).
+      An Example of Statistical Investigation of the Text Eugene Onegin
+      Concerning the Connection of Samples in Chains.
+
+      Shannon, C. E. (1948).
+      A Mathematical Theory of Communication.
+      The holy grail of Information Theory, explaining N-grams, entropy,
+      and predictability of language.
+     
+     The GA navigates the immense keyspace of the Steckerbrett,
+     while a Markov Chain evaluates the generated text's likelihood of
+     being natural language by calculating its N-gram transition probabilities.
+     
+[11]. On Statistical Cryptanalysis (Fitness Metrics):
+
+      Friedman, W. F. (1922).
+      The Index of Coincidence and its Applications in Cryptography.
+
+[12]. On Hidden Markov Models (Advanced Sequence Decoding):
+
+      Baum, L. E., & Petrie, T. (1966).
+      Statistical Inference for Probabilistic Functions of Finite State
+      Markov Chains.
+      
+      Rabiner, L. R. (1989).
+      A Tutorial on Hidden Markov Models and Selected Applications in
+      Speech Recognition. 
+      
+      While standard Markov Chains model the transition probabilities of
+      natural language, this repository implements a Hidden Markov Model (HMM)
+      to represent the encryption process itself. The actual plaintext
+      characters are treated as the 'Hidden States', while the Enigma's
+      ciphertext output represents the 'Observations'.
+      By leveraging the Viterbi Algorithm, the model decodes the most
+      likely sequence of hidden states, effectively mathematically stripping
+      away the cipher.
+      
+      
 System out.
 EOF.
