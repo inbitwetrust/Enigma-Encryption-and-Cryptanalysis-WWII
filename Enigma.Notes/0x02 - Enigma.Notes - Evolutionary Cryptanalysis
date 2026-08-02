@@ -18,8 +18,9 @@
 [LOADING MODULES]...
 [PARSING HISTORICAL DATA]... DONE.
 
-I. INTRODUCTION: THE GHOST IN THE MACHINE
------------------------------------------------------
+=================================================================
+--[ I. INTRODUCTION: THE GHOST IN THE MACHINE
+=================================================================
 
 Imagine you are sitting in a dimly lit radio interception hut in the English
 countryside during the early 1940s. The air smells of ozone, burning
@@ -60,9 +61,9 @@ completely destroyed the natural spacing of words. If the enemy cannot see how
 long your words are, it becomes exponentially harder for them to guess what
 you are saying through frequency analysis. 
 
-
-II. THE ART OF CRYPTANALYSIS
------------------------------------------------------
+=================================================================
+--[ II. THE ART OF CRYPTANALYSIS
+=================================================================
 
 Cryptanalysis is the science of breaking these codes without possessing the
 secret daily settings (the key). It is not about guessing; it is about finding
@@ -90,9 +91,9 @@ the for-loop.
 This is where standard computing fails, and where we must turn to the
 ultimate optimization engine: Nature.
 
-
-III. THE EVOLUTIONARY SOLUTION: GENETIC ALGORITHMS
------------------------------------------------------
+=================================================================
+--[ III. THE EVOLUTIONARY SOLUTION: GENETIC ALGORITHMS
+=================================================================
 
 To conquer the plugboard, our modern cryptanalysis engine abandons brute force
 and embraces Charles Darwin. We implemented a Genetic Algorithm (GA),
@@ -138,9 +139,9 @@ and the correct wirings propagate. But this raises a critical question:
 how does the computer mathematically know which plugboard is "fitter" if it
 doesn't speak German?
 
-
-IV. THE JUDGE: MARKOV CHAINS AND TRANSITION MATRICES
------------------------------------------------------
+=================================================================
+--[ IV. THE JUDGE: MARKOV CHAINS AND TRANSITION MATRICES
+=================================================================
 
 To evaluate our genetic population, we built an exceptionally fast
 Natural Language Processing (NLP) component, which we have advanced
@@ -196,9 +197,9 @@ The Genetic Algorithm blindly chases this high score, evolving the
 plugboard generation by generation until the text statistically perfectly
 aligns with the German language. 
 
-
-V. THE DECODER: HIDDEN MARKOV MODELS & THE VITERBI PATH
------------------------------------------------------
+=================================================================
+--[ V. THE DECODER: HIDDEN MARKOV MODELS & THE VITERBI PATH
+=================================================================
 
 Once the Genetic Algorithm breaks the plugboard, we face a final challenge:
 the plaintext is still grouped in unreadable 5-letter blocks.
@@ -226,9 +227,9 @@ By recursively backtracing the path of highest cumulative probability through
 this trellis, the algorithm slices the text with surgical precision,
 transforming DASBO OTIST VERSENKT into DAS BOOT IST VERSENKT.
 
-
-VI. CONCLUSION
------------------------------------------------------
+=================================================================
+--[ VI. CONCLUSION
+=================================================================
 
 By merging the 1940s logic of the Turing Bombe with modern Genetic Algorithms
 and advanced Markov statistical models, we bypass the 158 quintillion
@@ -237,6 +238,19 @@ it adapts, evolves, and converges on the cryptographic truth.
 
 It is a beautiful marriage of history, biology, and high-performance
 C++ architecture, one that would make the ghosts of Bletchley Park very proud. 
+
+=================================================================
+--[ References & Bibliography
+=================================================================
+
+This module inherits its theoretical dependencies from the research
+presented in Paper 1. 
+
+To maintain the **DRY (Don't Repeat Yourself)** principle and avoid documentation
+bloat, the complete bibliography—including references on Genetic Algorithms,
+Markov Chains, and HMMs—is maintained centrally.
+
+View the complete Reference List in Paper # 1
 
 System out.
 EOF.
