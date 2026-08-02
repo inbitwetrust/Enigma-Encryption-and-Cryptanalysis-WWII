@@ -291,5 +291,18 @@ architecture, one that would make the ghosts of Bletchley Park very proud.
 
 Keep your comms encrypted, and your algorithms strictly supervised.
 
+=================================================================
+--[ References & Bibliography
+=================================================================
+
+This module inherits its theoretical dependencies from the research
+presented in Paper 1. 
+
+To maintain the **DRY (Don't Repeat Yourself)** principle and avoid documentation
+bloat, the complete bibliography—including references on Genetic Algorithms,
+Markov Chains, and HMMs—is maintained centrally.
+
+View the complete Reference List in Paper # 1
+
 [CONNECTION TERMINATED]
 EOF.
