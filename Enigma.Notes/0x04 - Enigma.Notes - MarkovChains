@@ -20,7 +20,7 @@
 [WARNING: HIGH-DENSITY ALGORITHMIC THEORY & ASCII MATH AHEAD]...
 
 ===========================================================================
-INTRODUCTION : THE LIMITS OF BRUTE FORCE
+--[ INTRODUCTION : THE LIMITS OF BRUTE FORCE
 ===========================================================================
 
 In the previous volume, we explored the mechanical anatomy of the Enigma 
@@ -42,7 +42,7 @@ noise, and infer hidden truths.
 This manifesto deconstructs the scientific theory behind our payload.
 
 ===========================================================================
-CHAPTER I : GENETIC ALGORITHMS (NAVIGATING DISCRETE HYPER-SPACES)
+--[ CHAPTER I : GENETIC ALGORITHMS (NAVIGATING DISCRETE HYPER-SPACES)
 ===========================================================================
 
 ### 1.1 What is a Genetic Algorithm (GA)?
@@ -75,7 +75,7 @@ across the hyper-space, ensuring global exploration while the crossover
 mechanism ensures local exploitation.
 
 ===========================================================================
-CHAPTER II : MARKOV CHAINS (THE MATHEMATICS OF LINGUISTIC STOCHASTICS)
+--[ CHAPTER II : MARKOV CHAINS (THE MATHEMATICS OF LINGUISTIC STOCHASTICS)
 ===========================================================================
 
 ### 2.1 What is a Markov Chain?
@@ -113,7 +113,7 @@ GA's search space strictly to the manifold of natural human language. The
 mathematics forced the machine to play by the rules of physics.
 
 ===========================================================================
-CHAPTER III : NLP AND THE VITERBI DECODER (INFERRING THE UNSEEN)
+--[ CHAPTER III : NLP AND THE VITERBI DECODER (INFERRING THE UNSEEN)
 ===========================================================================
 
 ### 3.1 What is the Viterbi Algorithm (HMM)?
@@ -154,7 +154,7 @@ in the transition matrix. The path [V] -> [ERSEN] -> [KT] is annihilated
 approaches zero.
 
 ===========================================================================
-CONCLUSION : THE ELEGANCE OF PROBABILISTIC DETERMINISM
+--[ CONCLUSION : THE ELEGANCE OF PROBABILISTIC DETERMINISM
 ===========================================================================
 
 The decryption of Enigma is not a problem of brute force; it is a problem of 
@@ -169,6 +169,19 @@ operators.
 This is why these specific algorithms were chosen. They do not guess. They 
 calculate the probabilities of the universe and collapse the chaos into 
 plaintext.
+
+=================================================================
+--[ References & Bibliography
+=================================================================
+
+This module inherits its theoretical dependencies from the research
+presented in Paper 1. 
+
+To maintain the **DRY (Don't Repeat Yourself)** principle and avoid documentation
+bloat, the complete bibliography—including references on Genetic Algorithms,
+Markov Chains, and HMMs—is maintained centrally.
+
+View the complete Reference List in Paper # 1
 
 [END OF TRANSMISSION]
 EOF.
