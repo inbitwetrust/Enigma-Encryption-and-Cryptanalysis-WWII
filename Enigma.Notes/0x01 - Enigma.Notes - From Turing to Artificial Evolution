@@ -395,57 +395,57 @@ The ghosts of Bletchley Park are smiling.
 --[ REFERENCES
 ===========================================================================
 
-[1]. Scherbius und die ENIGMA 
-     https://en.wikipedia.org/wiki/Arthur_Scherbius
+[01]. Scherbius und die ENIGMA 
+      https://en.wikipedia.org/wiki/Arthur_Scherbius
 
-[2]. German Patent and Trade Mark Office
+[02]. German Patent and Trade Mark Office
 
-     https://www.dpma.de/docs/dpma/veroeffentlichungen/
-     de416219a_chiffriermaschine1918.pdf
+      https://www.dpma.de/docs/dpma/veroeffentlichungen/
+      de416219a_chiffriermaschine1918.pdf
     
-     https://www.dpma.de/docs/dpma/de425147a_chiffriermaschine1920.pdf
+      https://www.dpma.de/docs/dpma/de425147a_chiffriermaschine1920.pdf
 
-     https://www.dpma.de/docs/dpma/veroeffentlichungen/
-     de378238a_chiffriermaschine1921.pdf
+      https://www.dpma.de/docs/dpma/veroeffentlichungen/
+      de378238a_chiffriermaschine1921.pdf
      
-     https://www.dpma.de/docs/dpma/veroeffentlichungen/
-     de536556a_chiffriermaschine1929.pdf
+      https://www.dpma.de/docs/dpma/veroeffentlichungen/
+      de536556a_chiffriermaschine1929.pdf
      
-[3]. The National Museum of Computing (TNMOC) - Enigma Machine
-     https://www.tnmoc.org/bh-2-the-enigma-machine
+[03]. The National Museum of Computing (TNMOC) - Enigma Machine
+      https://www.tnmoc.org/bh-2-the-enigma-machine
 
 
-[4]. A 4.5V battery produced by the firm Batteriefabrik Jäger KG
+[04]. A 4.5V battery produced by the firm Batteriefabrik Jäger KG
 
-     https://www.chiffriermaschine.com/explore/
-     enigma-battery-62c70660d27fe2b3064f4b2a-c0009
+      https://www.chiffriermaschine.com/explore/
+      enigma-battery-62c70660d27fe2b3064f4b2a-c0009
      
-[5]. Enigma Machine Simulator
-     https://decodecipher.net/enigma-machine.html
+[05]. Enigma Machine Simulator
+      https://decodecipher.net/enigma-machine.html
      
-[6]. Bletchley Park
-     https://www.bletchleypark.org.uk/
+[06]. Bletchley Park
+      https://www.bletchleypark.org.uk/
      
-[7]. Alan Turing - British Mathematician and Logician
-     https://www.britannica.com/biography/Alan-Turing
+[07]. Alan Turing - British Mathematician and Logician
+      https://www.britannica.com/biography/Alan-Turing
      
-[8]. Gordon Welchman
-     https://bletchleypark.org.uk/wp-content/uploads/record_attachments/1839.pdf
+[08]. Gordon Welchman
+      https://bletchleypark.org.uk/wp-content/uploads/record_attachments/1839.pdf
      
-[9]. The implementation of the Genetic Algorithm for the Enigma's Steckerbrett
-     in this repository was heavily inspired by the theoretical
-     foundations found in:
+[09]. The implementation of the Genetic Algorithm for the Enigma's Steckerbrett
+      in this repository was heavily inspired by the theoretical
+      foundations found in:
      
-     Genetic algorithm attack on Enigma’s plugboard
-     Åvald Åslaugson Sommervoll, Leif Nilsen
-     Pages 194-226 | Published online: 13 Mar 2020
-     https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1721617
+      Genetic algorithm attack on Enigma’s plugboard
+      Åvald Åslaugson Sommervoll, Leif Nilsen
+      Pages 194-226 | Published online: 13 Mar 2020
+      https://www.tandfonline.com/doi/full/10.1080/01611194.2020.1721617
      
-     Holland, J. H. (1975)
-     Adaptation in Natural and Artificial Systems
+      Holland, J. H. (1975)
+      Adaptation in Natural and Artificial Systems
      
-     Friedman, W. F. (1922)
-     The Index of Coincidence and its Applications in Cryptography
+      Friedman, W. F. (1922)
+      The Index of Coincidence and its Applications in Cryptography
      
 [10]. On Language Modeling & Fitness Scoring:
 
@@ -458,9 +458,9 @@ The ghosts of Bletchley Park are smiling.
       The holy grail of Information Theory, explaining N-grams, entropy,
       and predictability of language.
      
-     The GA navigates the immense keyspace of the Steckerbrett,
-     while a Markov Chain evaluates the generated text's likelihood of
-     being natural language by calculating its N-gram transition probabilities.
+      The GA navigates the immense keyspace of the Steckerbrett,
+      while a Markov Chain evaluates the generated text's likelihood of
+      being natural language by calculating its N-gram transition probabilities.
      
 [11]. On Statistical Cryptanalysis (Fitness Metrics):
 
