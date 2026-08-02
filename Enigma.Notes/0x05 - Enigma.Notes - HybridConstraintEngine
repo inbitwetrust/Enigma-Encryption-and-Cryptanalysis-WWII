@@ -22,7 +22,7 @@
 [WARNING: 27,418,560 CORE STATES AHEAD]...
 
 ===========================================================================
-INTRODUCTION : THE ATTACK HAS CHANGED
+--[ INTRODUCTION : THE ATTACK HAS CHANGED
 ===========================================================================
 
 The previous generation of this project treated the Steckerbrett as the main
@@ -77,7 +77,7 @@ a cycle-accurate reconstruction of it, the distinction is explicit.
 The objective is fidelity, not mythology.
 
 ===========================================================================
-CHAPTER I : THE MACHINE MODEL AND THE ATTACK BOUNDARY
+--[ CHAPTER I : THE MACHINE MODEL AND THE ATTACK BOUNDARY
 ===========================================================================
 
 ### 1.1 Supported Enigma Configuration
@@ -138,7 +138,7 @@ It is an academic three-rotor cryptanalysis demonstrator with a hybrid search
 pipeline.
 
 ===========================================================================
-CHAPTER II : CRIB ACQUISITION AND THE NO-SELF-ENCRYPTION FILTER
+--[ CHAPTER II : CRIB ACQUISITION AND THE NO-SELF-ENCRYPTION FILTER
 ===========================================================================
 
 ### 2.1 The Crib as a Constraint Injection
@@ -185,7 +185,7 @@ The second path is broader, but each additional admissible offset multiplies
 the number of constraint checks performed for every core state.
 
 ===========================================================================
-CHAPTER III : THE 27,418,560-STATE CORE SWEEP
+--[ CHAPTER III : THE 27,418,560-STATE CORE SWEEP
 ===========================================================================
 
 ### 3.1 Decomposing the Search Space
@@ -240,7 +240,7 @@ This changes the inner loop from repeated string searching into indexed table
 lookups. The cryptanalytic furnace gets fewer moving parts and more heat.
 
 ===========================================================================
-CHAPTER IV : BOMBE-INSPIRED CONSTRAINT PROPAGATION
+--[ CHAPTER IV : BOMBE-INSPIRED CONSTRAINT PROPAGATION
 ===========================================================================
 
 ### 4.1 Seeding the Plugboard Hypothesis
@@ -324,7 +324,7 @@ stop circuitry, timing, or complete operational procedure of a wartime Bombe.
 The inspiration is mathematical, not museum-grade mechanical reconstruction.
 
 ===========================================================================
-CHAPTER V : PHASE 1.5 AND THE RINGSTELLUNG EQUIVALENCE
+--[ CHAPTER V : PHASE 1.5 AND THE RINGSTELLUNG EQUIVALENCE
 ===========================================================================
 
 ### 5.1 Why a Second Ring Search Exists
@@ -382,7 +382,7 @@ The highest-scoring candidate across all Bombe hits becomes the core key passed
 to Phase 2.
 
 ===========================================================================
-CHAPTER VI : THE LANGUAGE ORACLE IS A FEATURE ENGINE, NOT A LOG-LIKELIHOOD
+--[ CHAPTER VI : THE LANGUAGE ORACLE IS A FEATURE ENGINE, NOT A LOG-LIKELIHOOD
 ===========================================================================
 
 ### 6.1 Dictionary Normalization
@@ -473,7 +473,7 @@ vocabulary, not the probability of authentic German under a statistically
 trained corpus model.
 
 ===========================================================================
-CHAPTER VII : MUTATION-BASED EVOLUTIONARY PLUGBOARD SEARCH
+--[ CHAPTER VII : MUTATION-BASED EVOLUTIONARY PLUGBOARD SEARCH
 ===========================================================================
 
 ### 7.1 The Reduced Mission
@@ -550,7 +550,7 @@ ranking have already compressed the battlefield.
 Darwin is no longer sent into the entire jungle. Bombe hands him a map.
 
 ===========================================================================
-CHAPTER VIII : THE HUMAN-IN-THE-LOOP OVERRIDE
+--[ CHAPTER VIII : THE HUMAN-IN-THE-LOOP OVERRIDE
 ===========================================================================
 
 After the evolutionary stage, the program displays:
@@ -573,7 +573,7 @@ message is short, abbreviated, misspelled, or outside the embedded dictionary.
 The automated system proposes. The analyst disposes.
 
 ===========================================================================
-CHAPTER IX : VITERBI-STYLE DYNAMIC PROGRAMMING FOR WORD SEGMENTATION
+--[ CHAPTER IX : VITERBI-STYLE DYNAMIC PROGRAMMING FOR WORD SEGMENTATION
 ===========================================================================
 
 ### 9.1 The Problem
@@ -642,7 +642,7 @@ no explicit hidden-state vocabulary graph.
 Accuracy begins with accurate names.
 
 ===========================================================================
-CHAPTER X : THE SIMULATED ULTRA DOSSIER
+--[ CHAPTER X : THE SIMULATED ULTRA DOSSIER
 ===========================================================================
 
 ### 10.1 Report Generation Path
@@ -687,7 +687,7 @@ The cryptanalytic values derived from the current run must be distinguished
 from the report's fictionalized atmosphere.
 
 ===========================================================================
-CHAPTER XI : FAILURE MODES, LIMITATIONS, AND SCIENTIFIC HONESTY
+--[ CHAPTER XI : FAILURE MODES, LIMITATIONS, AND SCIENTIFIC HONESTY
 ===========================================================================
 
 ### 11.1 Crib Dependence
@@ -745,7 +745,7 @@ semantics, and independent reproduction.
 A green terminal is not peer review.
 
 ===========================================================================
-CHAPTER XII : THE HYBRID PRINCIPLE
+--[ CHAPTER XII : THE HYBRID PRINCIPLE
 ===========================================================================
 
 The central scientific idea of v16 is algorithmic specialization.
@@ -784,7 +784,7 @@ Dynamic programming removes spacing ambiguity.
 That is the v16 architecture.
 
 ===========================================================================
-CONCLUSION : FROM RANDOM SEARCH TO CONSTRAINED INFERENCE
+--[ CONCLUSION : FROM RANDOM SEARCH TO CONSTRAINED INFERENCE
 ===========================================================================
 
 The previous design placed evolutionary search near the entrance of the maze.
@@ -813,5 +813,18 @@ dynamic programming, and analyst judgment.
 
 The cipher is not defeated by one giant hammer.
 It is dismantled by a sequence of smaller tools, each shaped for one bolt.
+
+=================================================================
+--[ References & Bibliography
+=================================================================
+
+This module inherits its theoretical dependencies from the research
+presented in Paper 1. 
+
+To maintain the **DRY (Don't Repeat Yourself)** principle and avoid documentation
+bloat, the complete bibliography—including references on Genetic Algorithms,
+Markov Chains, and HMMs—is maintained centrally.
+
+View the complete Reference List in Paper # 1
 
 [END OF TRANSMISSION]
