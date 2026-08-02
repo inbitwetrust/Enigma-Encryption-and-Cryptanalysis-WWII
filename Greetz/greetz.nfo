@@ -1,0 +1,87 @@
+ + --------------------------------------------------------- +
+ |  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+ |  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+ |  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+ |  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+ |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+ |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝    ╚═╝╚═╝  ╚═╝         |
+ |                                                           |
+ |  World War II Enigma — Bombe-Inspired Cryptanalysis       |
+ |  Academic Cryptanalysis Demonstrator v16                  |
+ |                                                           |
+ |  "We can only see a short distance ahead,                 |
+ |   but we can see plenty there that needs to be done."     |
+ |                                       -- Alan Turing      |
+ + --------------------------------------------------------- +
+
+ [ SYS.INIT ] -> Booting state-space search engine... OK.
+ [ SYS.INIT ] -> Loading heuristic models (Banburismus)... OK.
+ [ SYS.INIT ] -> Bypassing plugboard permutations... OK.
+ [ SYS.INIT ] -> Target keyspace entropy reduced to zero.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[ GREETZ & SHOUTOUTS ]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+This project on Enigma's cryptanalysis is a tribute to history's absolute OG
+nerds. To those who pulled off the ultimate reverse-engineering flex and
+proved that no cryptographic implementation is bulletproof when it's up
+against mathematical genius, sheer stubbornness, and probably massive
+amounts of caffeine (or tea, to be historically accurate).
+
+Massive greetz & root privileges go out to:
+
+[+] The Polish Biuro Szyfrow (Rejewski, Rozycki, Zygalski)
+
+    The original white-hats. These guys did pure black-box testing on
+    military-grade hardware without even having access to the manual. Using
+    Group Theory and permutations, they found the fatal flaws in Enigma's
+    wiring. The Polish Bomba and the Zygalski sheets were essentially the
+    first hardware exploits in history. Without their PoC, the Brits would
+    probably still be fuzzing the plugboard blindly.
+
+[+] Alan Turing (Node 0)
+
+    The undisputed architect of modern computation. While the Axis saw an
+    unbreakable cipher, he saw a deterministic finite automaton. By
+    translating cryptographic weaknesses into a formal system of logical
+    contradictions, he didn't just break Enigma; he laid the theoretical
+    groundwork for the machines we use to compile this very code today. The
+    Bombe wasn't merely a hardware solver—it was a physical manifestation of
+    algorithmic elegance, proving that universal computation could defeat
+    any obfuscation.
+
+[+] Gordon Welchman
+
+    The unsung hero of algorithmic optimization. His Diagonal Board was the
+    ultimate hack on top of Turing's hack. He exploited the symmetry of the
+    plugboard (if current goes A->B, it goes B->A) to slash false positives
+    and minimize the Bombe's CPU cycles. A true wizard.
+
+[+] Joan Clarke & Hugh Alexander (Hut 8 Crew)
+
+    Because brute-forcing keyspace is completely useless without heuristics.
+    They set up the statistical analyses (Banburismus) that drastically
+    reduced the search space, saving precious processing time and proving
+    that a massive brain can drop ciphertext entropy straight to zero.
+
+[+] The Wrens (WRNS) & the Y-Station operators
+
+    The true botnet of the era. The thousands of women who operated the
+    Bombe machines and the radio interceptors who performed endless data
+    scraping of encrypted messages through the Morse code static. The
+    dataset they compiled was absolute fire.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The German High Command honestly believed that Enigma's 159 x 10^18 possible
+keys provided cryptographic perfection. But they forgot the golden rule of
+infosec: Your crypto is only as strong as your hardware implementation and
+the OPSEC of your users. (Which is usually zero when you broadcast the
+weather every morning at 6 AM using the exact same plaintext format. Noobs.)
+
+They proved that mathematical elegance is the ultimate decryption key. May
+their legacy forever remain the plaintext upon which modern computer science
+is built.
+
+EOF.
