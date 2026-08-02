@@ -13,13 +13,16 @@
 ==  Date    : July 2026                                                  ==
 ==  Volume  : 0x06                                                       ==
 ==-----------------------------------------------------------------------==
+
 [SYSTEM INITIATION]...
 [LOADING GROUP THEORY VECTORS]... DONE.
 [ARMING PERMUTATION MATRICES]... DONE.
 [INITIALIZING Y-STATION TRAFFIC LOGS]... DONE.
 [WARNING: INCOMING WEHRMACHT TRANSMISSIONS DETECTED]...
 
----[ INTRODUCTION : THE ARROGANCE OF UNBREAKABLE MATH ]------------------------
+=================================================================
+---[ INTRODUCTION : THE ARROGANCE OF UNBREAKABLE MAΤΗ
+=================================================================
 
 The German military believed the Enigma was cryptographically invincible, a
 perfect black box. They rested their hubris on the astronomical permutations
@@ -28,20 +31,22 @@ states to a staggering 1.5 x 10^14. To the German High Command, brute-forcing
 this search space was a mathematical impossibility. They were entirely correct
 about the brute force. But they were fatally wrong about the math.
 
-Enter Marian Rejewski, a brilliant Polish mathematician who dropped a massive
+Enter Marian Rejewski [1], a brilliant Polish mathematician who dropped a massive
 zero-day on the Third Reich in December 1932. Rejewski realized you didn't need
-to attack the entire machine at once. The Germans had introduced a massive
+to attack the entire machine at once[2]. The Germans had introduced a massive
 operational flaw: to ensure secure transmission of the temporary 3-letter
 message key, operators typed it twice (e.g., 'XYZXYZ') at the beginning of every
 message. They basically handed over a chosen-plaintext oracle wrapped in a bow.
 
-This paper documents the exact mathematical exploit Rejewski used to decouple
+This paper documents the exact mathematical exploit[3] Rejewski used to decouple
 the plugboard from the rotors, why his algorithm required massive amounts of
 packet-sniffing (intercepted data) to execute, and how the British Y-Station
 network systematically mapped and stripped the German radio topology using
 nothing but raw metadata.
 
----[ CHAPTER I : THE MATHEMATICS OF THE DOUBLE INDICATOR ]---------------------
+=================================================================
+---[ CHAPTER I : THE MATHEMATICS OF THE DOUBLE INDICATOR
+=================================================================
 
 ### 1.1 The Conjugation Exploit
 
@@ -70,7 +75,9 @@ combinations was instantly folded down to just 105,456 possible rotor
 configurations. It's the 1930s equivalent of bypassing the firewall to find the
 backend database entirely unpatched.
 
----[ CHAPTER II : THE 300-MESSAGE THRESHOLD (DATA STARVATION) ]----------------
+=================================================================
+---[ CHAPTER II : THE 300-MESSAGE THRESHOLD (DATA STARVATION)
+=================================================================
 
 ### 2.1 Why a Single Ciphertext is Useless
 
@@ -99,7 +106,9 @@ the *exact same day key* to populate enough of the AD, BE, and CF tables to
 close the loops. Without 300 messages, the chains break, the fingerprint is
 incomplete, and the catalog lookup fails. You need a fat pipe of data.
 
----[ CHAPTER III : THE MORNING RUSH & Y-STATION PIPELINE ]---------------------
+=================================================================
+---[ CHAPTER III : THE MORNING RUSH & Y-STATION PIPELINE
+=================================================================
 
 ### 3.1 The 0600 - 0900 Blitz
 
@@ -133,7 +142,9 @@ By 09:30 AM, Rejewski (and later Turing's team) had enough statistical data
 sitting on their desks to run their mathematical exploits and pop a shell on the
 daily key before lunch.
 
----[ CHAPTER IV : KENNGRUPPEN AND TOPOLOGICAL STRIP-MINING ]-------------------
+=================================================================
+---[ CHAPTER IV : KENNGRUPPEN AND TOPOLOGICAL STRIP-MINING
+=================================================================
 
 ### 4.1 Unmasking the Network
 
@@ -166,7 +177,9 @@ The Germans believed their communications were a black box. In reality, the
 Allies were reading the metadata so perfectly that they knew the German order of
 battle better than Berlin did.
 
----[ CONCLUSION : THE VIRTUE OF LAZINESS ]-------------------------------------
+=================================================================
+---[ CONCLUSION : THE VIRTUE OF LAZINESS
+=================================================================
 
 The fall of Enigma was not solely a triumph of raw computing power; it was a
 masterclass in exploiting human laziness and bureaucratic rigidity.
@@ -181,4 +194,35 @@ Cryptanalysis is rarely about fighting the math head-on. It is about waiting for
 the enemy to build an impregnable fortress, and then quietly picking the lock on
 the back door because someone forgot to disable telnet.
 
-[END OF DOSSIER]
+=================================================================
+--[ References & Bibliography
+=================================================================
+
+[01]. Marian Adam Rejewski
+      https://mathshistory.st-andrews.ac.uk/Biographies/Rejewski/
+      https://kuryerpolski.us/en/Page/View/marian-rejewski
+      https://culture.pl/en/article/the-hacker-who-saved-thirty-million-lives
+      
+      https://youtu.be/aAsIpBZqr-I
+      https://youtu.be/j2TaRJ-9qbs
+      https://youtu.be/ER3loPaDH-g
+      https://youtu.be/rmzONLlR2UM
+      https://youtu.be/ouCyjCYwrdc
+      https://youtu.be/oEuK3CH1FwY
+      https://youtu.be/jnADN_0M_2A
+      https://youtu.be/K3hVKCRBK0I
+      
+[02]. Polish Mathematicians Finding Patterns in Enigma Messages
+      Chris Christensen
+      https://www.matematiksider.dk/enigma/MAA%20article%20about%20Enigma%20.pdf
+      
+      An application of the theory of permutations in breaking the Enigma cipher
+      Marian Rejewski 1980 
+      https://www.impan.pl/shop/publication/transaction/download/product/102945
+      
+[03]. Marian Rejewski Enigma Cryptanalysis attack
+      https://github.com/NationalSecurityAgency/enigma-simulator/
+      blob/master/rejewski.py
+
+System out.
+EOF.
