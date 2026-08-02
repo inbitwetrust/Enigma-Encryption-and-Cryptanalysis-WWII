@@ -485,7 +485,6 @@ The ghosts of Bletchley Park are smiling.
       By leveraging the Viterbi Algorithm, the model decodes the most
       likely sequence of hidden states, effectively mathematically stripping
       away the cipher.
-      
-      
+
 System out.
 EOF.
