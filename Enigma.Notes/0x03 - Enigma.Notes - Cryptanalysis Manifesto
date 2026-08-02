@@ -20,7 +20,7 @@
 [WARNING: EXTREME CRYPTOGRAPHIC CONTENT AND ASCII DIAGRAMS AHEAD]...
 
 ===========================================================================
-CHAPTER I : THE GHOST IN THE MACHINE (ANATOMY OF ENIGMA)
+--[ CHAPTER I : THE GHOST IN THE MACHINE (ANATOMY OF ENIGMA)
 ===========================================================================
 
 Imagine you are sitting in a dimly lit radio interception hut in the English
@@ -85,7 +85,7 @@ making it exponentially harder to guess what was being said through frequency
 analysis.
 
 ===========================================================================
-CHAPTER II : THE BLETCHLEY PARK COUNTER-STRIKE
+--[ CHAPTER II : THE BLETCHLEY PARK COUNTER-STRIKE
 ===========================================================================
 
 Cryptanalysis is not about guessing; it is about finding the tiny, mathematical 
@@ -103,17 +103,27 @@ The British used this to perform "Crib Dragging". A "crib" is a piece of text
 we guess is in the message, like WETTERVORHERSAGE (Weather forecast). 
 Watch how it works:
 
-CIPHERTEXT:  K Q Z M P L O X T B Y R W V
+CIPHERTEXT:  X E K T Z M P L
 CRIB (1)  :  W E T T E R
-             | | | | | | -> 'T' matches 'T'. ILLEGAL! Offset 1 is WRONG.
+             | ^ | ^ | | 
+               |   |
+               |   +-> 'T' matches 'T'. ILLEGAL!
+               +-----> 'E' matches 'E'. ILLEGAL! 
+             Offset 1 is WRONG.
 
-CIPHERTEXT:  K Q Z M P L O X T B Y R W V
+CIPHERTEXT:  X E K T Z M P L
 CRIB (2)  :    W E T T E R
-               | | | | | | -> 'E' matches 'E'. ILLEGAL! Offset 2 is WRONG.
+               | | ^ | | | 
+                   |
+                   +-> 'T' matches 'T'. ILLEGAL!
+             Offset 2 is WRONG.
 
-CIPHERTEXT:  K Q Z M P L O X T B Y R W V
-CRIB (3)  :        W E T T E R
-                   ^ ^ ^ ^ ^ ^ -> NO MATCHES! This is a VALID possible offset.
+CIPHERTEXT:  X E K T Z M P L
+CRIB (3)  :      W E T T E R
+                 | | | | | | 
+                 v v v v v v 
+                 NO MATCHES! K!=W, T!=E, Z!=T, M!=T, P!=E, L!=R.
+             This is a VALID possible offset.
 
 The Bombe dragged this crib across the encrypted text to find logical 
 contradictions in the circuitry. However, the Bombe could only uncover 
@@ -128,7 +138,7 @@ The universe would suffer heat death before a standard CPU for-loop finished
 brute-forcing that.
 
 ===========================================================================
-CHAPTER III : ENTER DARWIN (GENETIC ALGORITHMS)
+--[ CHAPTER III : ENTER DARWIN (GENETIC ALGORITHMS)
 ===========================================================================
 
 To conquer the 158-quintillion plugboard wall, our modern cryptanalysis engine 
@@ -177,7 +187,7 @@ But here lies the ultimate question: How does the computer mathematically know
 which plugboard is "fitter" if it doesn't speak German?
 
 ===========================================================================
-CHAPTER IV : THE AI REBELLION (REWARD HACKING EXPLOIT)
+--[ CHAPTER IV : THE AI REBELLION (REWARD HACKING EXPLOIT)
 ===========================================================================
 
 To judge the fitness, we built a Markov Chain Engine. Initially, we gave it a 
@@ -205,7 +215,7 @@ algorithm descended into a negative-score death spiral. We needed a scalpel,
 not a sledgehammer.
 
 ===========================================================================
-CHAPTER V : THE CURE (IOC GUILLOTINE & BOOLEAN CAPS)
+--[ CHAPTER V : THE CURE (IOC GUILLOTINE & BOOLEAN CAPS)
 ===========================================================================
 
 We had to teach the machine the laws of physical linguistics. We introduced 
@@ -234,7 +244,7 @@ the Genetic Algorithm had no choice but to actually decrypt the authentic
 German text to survive.
 
 ===========================================================================
-CHAPTER VI : THE ORACLE (HIDDEN MARKOV MODELS & VITERBI)
+--[ CHAPTER VI : THE ORACLE (HIDDEN MARKOV MODELS & VITERBI)
 ===========================================================================
 
 Once the GA breaks the plugboard, the plaintext is still grouped in unreadable 
@@ -274,7 +284,7 @@ this trellis, the algorithm slices the text with surgical precision,
 transforming DASBO OTIST VERSENKT into DAS BOOT IST VERSENKT.
 
 ===========================================================================
-CHAPTER VII : EPILOGUE (THE TRIUMPH OF SILICON)
+--[ CHAPTER VII : EPILOGUE (THE TRIUMPH OF SILICON)
 ===========================================================================
 
 By merging the 1940s logic of the Turing Bombe with modern Genetic Algorithms 
