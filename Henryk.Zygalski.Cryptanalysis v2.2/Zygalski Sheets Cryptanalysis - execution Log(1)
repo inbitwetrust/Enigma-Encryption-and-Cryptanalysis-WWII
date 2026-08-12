@@ -1,0 +1,102 @@
+./Zygalski-Sheets-Cryptanalysis-v2.2-bin intercepts.txt 
+
+ + --------------------------------------------------------- +
+ |  ██████╗███╗   ██╗██╗ ██████╗ ███╗   ███╗ █████╗          |
+ |  ██╔═══╝████╗  ██║██║██╔════╝ ████╗ ████║██╔══██╗         |
+ |  █████╗  ██╔██╗ ██║██║██║  ███╗██╔████╔██║███████║        |
+ |  ██╔══╝  ██║╚██╗██║██║██║   ██║██║╚██╔╝██║██╔══██║        |
+ |  ██████╗ ██║ ╚████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║        |
+ |  ╚═════╝ ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝        |
+ |                                                           |
+ |  Zygalski Sheets Cryptanalysis Simulator v2.2             |
+ |  Patched Edition: Dynamic Indicator Parsing               |
+ |  Zygalski Sheets PDF reconstruction                       |
+ |                                                           |
+ |  Marian Rejewski - Henryk Zygalski - Jerzy Różycki        |
+ |  Biuro Szyfrów inspired visual reconstruction             |
+ |                                                           |
+ |  Created by George W. Aravidis                            |
+ |  Cybersicherheitsforschung                                |
+ |                                                           |
+ |  Ulm Söflingen | Deutschland                              |
+ |  Email address # csec.unbutton326@passinbox.com           |
+ + --------------------------------------------------------- +
+
+[*] Reading intercepted traffic: intercepts.txt
+[*] Valid intercepted messages: 400
+[*] Ignored/non-matching lines: 0
+[*] Female characteristics extracted: 50
+    [+] Type 1-4  Indicator PWX  Six letters YUWYCU  (line 4)
+    [+] Type 2-5  Indicator BOF  Six letters NYFTYB  (line 18)
+    [+] Type 3-6  Indicator WXM  Six letters ZAXYOX  (line 32)
+    [+] Type 3-6  Indicator OQZ  Six letters HIQQDQ  (line 35)
+    [+] Type 2-5  Indicator DGM  Six letters OAJNAN  (line 37)
+    [+] Type 1-4  Indicator TKI  Six letters SLISSF  (line 38)
+    [+] Type 3-6  Indicator QXS  Six letters DUKSRK  (line 46)
+    [+] Type 3-6  Indicator BMU  Six letters WEVUQV  (line 51)
+    [+] Type 3-6  Indicator YYE  Six letters VZTKST  (line 57)
+    [+] Type 1-4  Indicator FOE  Six letters OKAOPQ  (line 59)
+    [+] Type 3-6  Indicator KHR  Six letters KLTURT  (line 69)
+    [+] Type 3-6  Indicator HXN  Six letters NNKDTK  (line 71)
+    [+] Type 2-5  Indicator YYH  Six letters WZQZZW  (line 84)
+    [+] Type 1-4  Indicator ENA  Six letters KXQKBJ  (line 86)
+    [+] Type 1-4  Indicator FUO  Six letters KNTKNQ  (line 93)
+    [+] Type 2-5  Indicator FUO  Six letters KNTKNQ  (line 93)
+    [+] Type 3-6  Indicator VDO  Six letters KSSLLS  (line 103)
+    [+] Type 3-6  Indicator ACK  Six letters ZHSJTS  (line 115)
+    [+] Type 2-5  Indicator MPV  Six letters PWXNWX  (line 143)
+    [+] Type 3-6  Indicator MPV  Six letters PWXNWX  (line 143)
+    [+] Type 1-4  Indicator ABT  Six letters VQXVUH  (line 147)
+    [+] Type 3-6  Indicator GDP  Six letters KXCMPC  (line 165)
+    [+] Type 3-6  Indicator MPE  Six letters ZOMVBM  (line 168)
+    [+] Type 3-6  Indicator DUJ  Six letters BTMRHM  (line 183)
+    [+] Type 2-5  Indicator VSA  Six letters ZUZTUF  (line 187)
+    [+] Type 1-4  Indicator XXV  Six letters KIMKQQ  (line 198)
+    [+] Type 3-6  Indicator QXU  Six letters JTHZKH  (line 204)
+    [+] Type 2-5  Indicator WCC  Six letters ULKZLH  (line 205)
+    [+] Type 2-5  Indicator DES  Six letters LEGKEV  (line 207)
+    [+] Type 2-5  Indicator BQA  Six letters GBGEBB  (line 217)
+    [+] Type 2-5  Indicator PBV  Six letters VNLNNT  (line 220)
+    [+] Type 3-6  Indicator WHO  Six letters FBTSTT  (line 243)
+    [+] Type 2-5  Indicator LVW  Six letters XKWIKG  (line 244)
+    [+] Type 2-5  Indicator DXC  Six letters JUOHUI  (line 250)
+    [+] Type 1-4  Indicator OHY  Six letters LGRLIX  (line 256)
+    [+] Type 3-6  Indicator VVB  Six letters VGAMHA  (line 277)
+    [+] Type 1-4  Indicator YIL  Six letters FRBFRC  (line 288)
+    [+] Type 2-5  Indicator YIL  Six letters FRBFRC  (line 288)
+    [+] Type 1-4  Indicator CXY  Six letters NDKNUW  (line 303)
+    [+] Type 2-5  Indicator RQL  Six letters IQMWQZ  (line 310)
+    [+] Type 2-5  Indicator GQF  Six letters BALPAP  (line 324)
+    [+] Type 1-4  Indicator QAX  Six letters FCBFTW  (line 334)
+    [+] Type 1-4  Indicator SRN  Six letters BPPBDF  (line 338)
+    [+] Type 3-6  Indicator DHF  Six letters MXTSDT  (line 344)
+    [+] Type 3-6  Indicator HHZ  Six letters XOGQFG  (line 358)
+    [+] Type 2-5  Indicator DBN  Six letters QPYYPB  (line 361)
+    [+] Type 3-6  Indicator BRD  Six letters ORKKNK  (line 363)
+    [+] Type 1-4  Indicator MTZ  Six letters BVBBFX  (line 365)
+    [+] Type 1-4  Indicator UCH  Six letters FXRFIA  (line 377)
+    [+] Type 3-6  Indicator ZMV  Six letters JNCDAC  (line 400)
+
+[*] Searching all 60 rotor orders and 17,576 Ringstellungen per order...
+    [~] Rotor orders completed: 60 / 60                  
+[*] Search time: 1.45 s
+[*] Candidate machine settings: 1
+
+[!] UNIQUE ZYGALSKI SOLUTION
+    Rotor order : II - I - IV
+    Ringstellung: FSU
+
+[*] Constructing 50 historical sheet page(s)...
+[*] Candidate reduction in displayed slice: 676 -> 260 -> 119 -> 44 -> 16 -> 7 -> 3 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1 -> 1
+[*] Common apertures in displayed 26x26 slice: 1
+    -> FSU  [DECISIVE KEY]
+
+[*] Rendering Polish historical PDF: Zygalski_Report_intercepts_PL.pdf
+[*] Rendering English historical PDF: Zygalski_Report_intercepts_EN.pdf
+[+] Both PDF editions completed successfully.
+[+] Polish : Zygalski_Report_intercepts_PL.pdf
+[+] English: Zygalski_Report_intercepts_EN.pdf
+
+[*] One solver run, two language editions, identical cryptanalytic data.
+[*] Done.
+
